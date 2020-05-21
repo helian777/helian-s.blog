@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2020/05/21/hello-world/"/>
-    <id>/2020/05/21/hello-world/</id>
+    <link href="//hello-world/"/>
+    <id>//hello-world/</id>
     <published>2020-05-21T06:59:26.878Z</published>
     <updated>2020-05-21T06:59:26.879Z</updated>
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title>Hexo-Theme-Sakura</title>
-    <link href="/2018/12/12/Hexo-Theme-Sakura/"/>
-    <id>/2018/12/12/Hexo-Theme-Sakura/</id>
+    <link href="//Hexo-Theme-Sakura/"/>
+    <id>//Hexo-Theme-Sakura/</id>
     <published>2018-12-12T14:16:01.000Z</published>
     <updated>2020-03-16T10:41:30.000Z</updated>
     
