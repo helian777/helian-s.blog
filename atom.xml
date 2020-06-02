@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2020-06-02T14:09:07.887Z</updated>
+  <updated>2020-06-02T15:30:05.860Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C语言编译步骤</title>
+    <link href="//C%E8%AF%AD%E8%A8%80%E7%BC%96%E8%AF%91%E6%AD%A5%E9%AA%A4/"/>
+    <id>//C语言编译步骤/</id>
+    <published>2020-06-02T14:50:21.000Z</published>
+    <updated>2020-06-02T15:30:05.860Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;C语言编译过程&quot;&gt;&lt;a href=&quot;#C语言编译过程&quot; class=&quot;headerlink&quot; title=&quot;C语言编译过程&quot;&gt;&lt;/a&gt;C语言编译过程&lt;/h1&gt;&lt;p&gt;先上一段最简单的代码 &lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;c&quot;&gt;#include
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Manjaro i3上手配置</title>
