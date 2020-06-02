@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title itemprop="name">hexo折腾记 | helian&#39;s blog</title>
+  <title itemprop="name">Tag: Manjaro | helian&#39;s blog</title>
   
     <link rel="shortcut icon" href="/images/favicon.ico">
   
@@ -250,189 +250,64 @@
   </div>
 </header>
 
-      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+      
 <div class="pattern-center-blank"></div>
-
-  <div class="pattern-center single-center">
-    <!-- 有配图默认渲染第一张 -->
-    <div class="pattern-attachment-img lazyload" style="background-image: url(https://cdn.jsdelivr.net/gh/helian777/blogcdn@1.0/img/10.jpg);" src="" data-src="https://cdn.jsdelivr.net/gh/helian777/blogcdn@1.0/img/10.jpg">
-    </div>
-    <header class="pattern-header single-header">
-      <h1 class="entry-title">
-      hexo折腾记</h1>
-      <p class="entry-census">
-        <span>
-          <a href="helian777.github.io">
-            <img src="https://cdn.jsdelivr.net/gh/helian777/blogcdn@1.0/img/2.jpg">
-          </a>
-        </span>
-        <span>
-          <a href="helian777.github.io">helian</a>
-        </span>
-        <span class="bull">
-        ·</span>
-        2020-5-21<span class="bull">
-        ·</span>
-      <span id="busuanzi_value_page_pv"></span>次阅读</p>
-    </header>
+<div class="pattern-center ">
+  <div class="pattern-attachment-img">
+    <img src="" data-src="Manjaro.img" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
   </div>
-
+  <header class="pattern-header ">
+    <h1 class="cat-title">Manjaro</h1>
+  </header>
+</div>
 <div id="content" class="site-content">
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
-        <div class="toc"></div>
-        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
-        
-        <div class="entry-content">
-          <h1 id="hexo折腾记"><a href="#hexo折腾记" class="headerlink" title="hexo折腾记"></a>hexo折腾记</h1><p>本人用的manjaro系统，有出入的话请自行百度</p>
-<p>hexo前置条件：</p>
-<ul>
-<li><p>git</p>
-</li>
-<li><p>Node_js</p>
-</li>
-<li><p>npm</p>
-</li>
-<li><p>hexo  </p>
-</li>
-</ul>
-<p>安装Node_js的时候有一个大坑，源里面带的版本太高了安装必报错换到12.14稳定版本解决</p>
-<p><em>设置软连接</em></p>
-<pre><code>ln -s /path/node/bin/node /usr/local/bin/node   
-ln -s /path/node/bin/npm /usr/local/bin/npm  
-npm install hexo -g #安装hexo  
-ln -s /path/node/node_modules/hexo/bin/hexo /usr/local/bin/hexo  
-</code></pre><p><em>检查安装是否成功</em></p>
-<pre><code>node -v  
-npm -v
-</code></pre><p>把前置环境装好后要去github上面注册一个帐号，新建一个仓库用来存放博客的，登陆之后点击头像-&gt;Your repositories-&gt;New-&gt;在用户名后面输入一个名字-&gt;Create a new repository</p>
-<p>配置ssh创建博客文件夹</p>
-<pre><code class="git">git config --global user.name &quot;Your name&quot; #配置git用户名
-git config --global user.email &quot;youremail@example.com&quot; #配置git邮箱
-git config --list #查看
-</code></pre>
-<p>接着生成ssh密钥：</p>
-<pre><code class="git">cd ~/.ssh
-ssh-keygen -t rsa -C &quot;youremail@example.com&quot; 
-cat id_rsa.pub #把密钥内容复制到github的settings-&gt;New ssh key-&gt;复制内容
-ssh -T git@github.com #验证密钥连接情况
-</code></pre>
-<p>关于ssh-keygen的文章：<a href="https://www.cnblogs.com/yanglang/p/9563496.html" target="_blank" rel="noopener">https://www.cnblogs.com/yanglang/p/9563496.html</a>  </p>
-<p><em>建立博客文件夹：</em></p>
-<pre><code class="git">mkdir &lt;文件夹&gt;
-cd &lt;文件夹&gt; &amp;&amp; hexo init
-npm install #安装hexo必备的组件
-如果在执行hexo d报错ERROR Deployer not found: git：
-
-npm install --save hexo-deployer-git
-然后创建修改博客目录下的_config.yml：
-</code></pre>
-<pre><code class="r">deploy:
-  type: git
-  repo: 仓库地址
-  branch: master
-终端输入hexo g -d &amp;&amp; hexo clean 等待一会访问博客地址就ok了！
-
-博客目录：
-
-  |── _config.yml     #网站的配置信息，您可以在此配置参数
-├── node_modules    #npm安装的所有程序包
-├── package.json    #npm安装的应用程序的信息
-├── package-lock.json   #针对和package.json中的应用程序提供更多详细信息
-├── scaffolds       #文章模版文件夹
-├── source          #资源文件夹，以下划线开头的文件/文件夹会被忽略
-  |   ├── _drafts
-  |   └── _posts
-├── themes          #主题文件夹，Hexo会根据主题来生成网页
-  |   └── landscape   #原始的hexo默认主题
-├── yarn-error.log  #日志文件
-└── .gitignore      #忽略文件，用于配置忽略条件
-</code></pre>
-<p>参考文章：</p>
-<p><a href="https://yremp.club/2019/07/17/linux-install-hexo/#undefined" target="_blank" rel="noopener">https://yremp.club/2019/07/17/linux-install-hexo/#undefined</a><br><a href="https://zhuanlan.zhihu.com/p/136552969" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/136552969</a></p>
-
-        </div>
-        <!-- .entry-content -->
-        <div class="single-reward">
-          <div class="reward-open">赏
-            <div class="reward-main">
-              <ul class="reward-row">
-                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/helian777/blogcdn@1.0//img/custom/donate/AliPayQR.jpg"></li>
-                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/helian777/blogcdn@1.0//img/custom/donate/WeChanQR.jpg"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-        <footer class="post-footer">
-          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-          <div class="post-tags">
-          </div>
-          <div class="post-share">
-            <div class="social-share sharehidden share-component"></div>
-            <i class="iconfont show-share icon-forward"></i>
-          </div>
-        </footer><!-- .entry-footer -->
-      </article>
-      <!-- #post-## -->
-      <div class="toc" style="background: none;"></div>
-      <section class="post-squares nextprev">
-        
-          
-            <div class="post-nepre full previous">
-          
-            <a href="/Manjaro-i3上手配置/" rel="prev">
-              <div class="background">
-                <img class="lazyload" src="" data-src="https://cdn.jsdelivr.net/gh/helian777/blogcdn@1.0/img/1.png" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/helian777/blogcdn@1.0/img/1.png">
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                Manjaro i3上手配置</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
-        
-      </section>
       
-<div id="vcomments"></div>
-<script>
-  window.onload = function(){
-      var valine = new Valine();
-      valine.init({
-        el: '#vcomments',
-        appId: "GyC3NzMvd0hT9Yyd2hYIC0MN-gzGzoHsz",
-        appKey: "mgOpfzbkHYqU92CV4IDlAUHQ",
-        path: window.location.pathname,
-        placeholder: "你是我一生只会遇见一次的惊喜 ..."
-      })
-  }
-</script>
-
-      <section class="author-profile">
-        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-          <a href="helian777.github.io" class="profile gravatar"><img src="https://cdn.jsdelivr.net/gh/helian777/blogcdn@1.0/img/2.jpg" itemprop="image" alt="helian" height="70" width="70"></a>
-          <div class="meta">
-            <span class="title">Author</span>
-            <h3 itemprop="name">
-            <a href="helian777.github.io" itemprop="url" rel="author">helian</a>
-            </h3>
-          </div>
+  <!-- 首页默认取最最新文章集 -->
+  
+    <article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
+  <div class="post-entry">
+    <div class="feature">
+      <a href="/Manjaro-i3上手配置/">
+        <div class="overlay">
+          <i class="iconfont icon-text">
+          </i>
         </div>
-        <hr>
-        <p><i class="iconfont icon-write"></i></p>
-      </section>
-    </main><!-- #main -->
-  </div><!-- #primary -->
+        <img width="150" height="150" src="https://cdn.jsdelivr.net/gh/helian777/blogcdn@1.0/img/1.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" >
+      </a>
+    </div>
+    <h1 class="entry-title">
+    <a href="/Manjaro-i3上手配置/">
+    Manjaro i3上手配置</a>
+    </h1>
+    <div class="p-time">
+      <i class="iconfont icon-time">
+      </i>
+    2020-6-2</div>
+    <p>
+    </p>
+    <footer class="entry-footer">
+      <div class="post-more">
+        <a href="/Manjaro-i3上手配置/">
+          <i class="iconfont icon-caidan">
+          </i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  <hr>
+</article>
+  
+
+
+      <div class="clearer">
+      </div>
+    </main>
+    <!--  -->
+    
+  </div>
 </div>
-
-
-
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>

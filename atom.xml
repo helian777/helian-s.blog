@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2020-05-21T14:34:10.000Z</updated>
+  <updated>2020-06-02T14:09:07.887Z</updated>
   <id>/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Manjaro i3上手配置</title>
+    <link href="//Manjaro-i3%E4%B8%8A%E6%89%8B%E9%85%8D%E7%BD%AE/"/>
+    <id>//Manjaro-i3上手配置/</id>
+    <published>2020-06-02T08:33:46.000Z</published>
+    <updated>2020-06-02T14:09:07.887Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;安装i3&quot;&gt;&lt;a href=&quot;#安装i3&quot; class=&quot;headerlink&quot; title=&quot;安装i3&quot;&gt;&lt;/a&gt;安装i3&lt;/h1&gt;&lt;p&gt;&lt;em&gt;i3&lt;/em&gt;是一款清晰便捷的窗口管理器并兼容多个linux发行版本(Arch 天下第一！) 
+        
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Manjaro" scheme="/tags/Manjaro/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo折腾记</title>
