@@ -363,7 +363,108 @@ sudo pacman -S variety
 <blockquote>
 <p>Manjaro中配置文件在<code>/usr/share/doc/alacritty/example/alacritty.yml</code>，把<em>alacritty.yml</em>移动到<code>~/.config/alacritty/alacritty.yml</code>，我的alacritty配置文件放在github上</p>
 </blockquote>
-<h3 id="修改i3配置文件"><a href="#修改i3配置文件" class="headerlink" title="修改i3配置文件"></a>修改i3配置文件</h3><p>i3的配置文件在<code>~/.config/i3/config</code>,前面安装compton等需要设置开机自启在任意位置插入</p>
+<p>variety动态壁纸</p>
+<blockquote>
+<p>sudo pacman -S nitrogen<br>nitrogen /usr/share/backgrounds #nitrogen设置壁纸<br>variety自定义设置</p>
+</blockquote>
+<p>compton毛玻璃特效</p>
+<pre><code>yay -S compton-tryone-git
+
+配置文件：
+
+
+dow
+shadow = true;
+no-dnd-shadow = true;
+no-dock-shadow = true;
+clear-shadow = true;
+shadow-radius = 10;
+shadow-offset-x = -15;
+shadow-offset-y = -15;
+shadow-opacity = 0.8;
+# shadow-red = 0.0;
+# shadow-green = 0.0;
+# shadow-blue = 0.0;
+shadow-exclude = [
+    &quot;name = &#39;Notification&#39;&quot;,
+    &quot;class_g = &#39;Conky&#39;&quot;,
+    &quot;class_g ?= &#39;Notify-osd&#39;&quot;,
+    &quot;class_g = &#39;Cairo-clock&#39;&quot;,
+    &quot;_GTK_FRAME_EXTENTS@:c&quot;
+];
+# shadow-exclude = &quot;n:e:Notification&quot;;
+# shadow-exclude-reg = &quot;x10+0+0&quot;;
+# xinerama-shadow-crop = true;
+
+# Opacity
+menu-opacity = 0.8;
+inactive-opacity = 0.88;
+active-opacity = 1;
+frame-opacity = 0.7;
+inactive-opacity-override = false;
+alpha-step = 0.06;
+# inactive-dim = 0.2;
+# inactive-dim-fixed = true;
+blur-background = true;
+# blur-background-frame = true;
+blur-method = &quot;kawase&quot;;
+blur-strength = 8;
+blur-kern = &quot;3x3box&quot;;
+# blur-kern = &quot;5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1&quot;;
+# blur-background-fixed = true;
+blur-background-exclude = [
+    &quot;window_type = &#39;dock&#39;&quot;,
+    &quot;window_type = &#39;desktop&#39;&quot;,
+    &quot;_GTK_FRAME_EXTENTS@:c&quot;
+];
+# opacity-rule = [ &quot;80:class_g = &#39;URxvt&#39;&quot; ];
+
+# Fading
+fading = true;
+fade-delta = 2;
+fade-in-step = 0.05;
+fade-out-step = 0.05;
+# no-fading-openclose = true;
+# no-fading-destroyed-argb = true;
+fade-exclude = [ ];
+
+# Other
+backend = &quot;glx&quot;;
+mark-wmwin-focused = true;
+mark-ovredir-focused = true;
+# use-ewmh-active-win = true;
+detect-rounded-corners = true;
+detect-client-opacity = true;
+refresh-rate = 0;
+vsync = &quot;none&quot;;
+dbe = false;
+paint-on-overlay = true;
+# sw-opti = true;
+# unredir-if-possible = true;
+# unredir-if-possible-delay = 5000;
+# unredir-if-possible-exclude = [ ];
+focus-exclude = [ &quot;class_g = &#39;Cairo-clock&#39;&quot; ];
+detect-transient = true;
+detect-client-leader = true;
+invert-color-include = [ ];
+# resize-damage = 1;
+
+# GLX backend
+# glx-no-stencil = true;
+glx-copy-from-front = false;
+# glx-use-copysubbuffermesa = true;
+# glx-no-rebind-pixmap = true;
+glx-swap-method = &quot;undefined&quot;;
+# glx-use-gpushader4 = true;
+# xrender-sync = true;
+# xrender-sync-fence = true;
+
+# Window type settings
+wintypes:
+{
+  tooltip = { fade = true; shadow = true; opacity = 0.75; focus = true; };
+};
+</code></pre><h3 id="修改i3配置文件"><a href="#修改i3配置文件" class="headerlink" title="修改i3配置文件"></a>修改i3配置文件</h3><p>i3的配置文件在<code>~/.config/i3/config</code>,前面安装compton等需要设置开机自启在任意位置插入</p>
 <blockquote>
 <p>exec –no-startup-id variety<br>exec –no-startup-id compton<br>exec –no-startup-id fcitx #输入法  </p>
 </blockquote>
