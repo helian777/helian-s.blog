@@ -359,7 +359,8 @@ sudo chsh -s fish的路径 #把默认shell换成fish
 <pre><code>sudo pacman -S alacritty
 sudo pacman -S compton
 sudo pacman -S variety
-</code></pre><p>美化alacritty</p>
+</code></pre><p>i3-gaps:<br><em>i3_gaps可以让你的终端旁边出现空余的间距</em>,sudo pacman -S i3-gaps,在i3配置文件中末尾添加<strong>gaps-inner 15</strong></p>
+<p>美化alacritty</p>
 <blockquote>
 <p>Manjaro中配置文件在<code>/usr/share/doc/alacritty/example/alacritty.yml</code>，把<em>alacritty.yml</em>移动到~/.config/alacritty/alacritty.yml</p>
 </blockquote>
@@ -1045,10 +1046,6 @@ wintypes:
 {
   tooltip = { fade = true; shadow = true; opacity = 0.75; focus = true; };
 };
-</code></pre><p>安装fish</p>
-<pre><code>sudo pacman -S fish
-
-自行github oh-my-fish
 </code></pre><h3 id="修改i3配置文件"><a href="#修改i3配置文件" class="headerlink" title="修改i3配置文件"></a>修改i3配置文件</h3><p>i3的配置文件在<code>~/.config/i3/config</code>,前面安装compton等需要设置开机自启在任意位置插入</p>
 <blockquote>
 <p>exec –no-startup-id variety<br>exec –no-startup-id compton<br>exec –no-startup-id fcitx #输入法  </p>
