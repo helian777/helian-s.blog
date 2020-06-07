@@ -361,257 +361,695 @@ sudo pacman -S compton
 sudo pacman -S variety
 </code></pre><p>美化alacritty</p>
 <blockquote>
-<p>Manjaro中配置文件在<code>/usr/share/doc/alacritty/example/alacritty.yml</code>，把<em>alacritty.yml</em>移动到<code>~/.config/alacritty/alacritty.yml</code><br><code>`</code></p>
+<p>Manjaro中配置文件在<code>/usr/share/doc/alacritty/example/alacritty.yml</code>，把<em>alacritty.yml</em>移动到~/.config/alacritty/alacritty.yml</p>
 </blockquote>
-<h1 id="Configuration-for-Alacritty-the-GPU-enhanced-terminal-emulator"><a href="#Configuration-for-Alacritty-the-GPU-enhanced-terminal-emulator" class="headerlink" title="Configuration for Alacritty, the GPU enhanced terminal emulator."></a>Configuration for Alacritty, the GPU enhanced terminal emulator.</h1><h1 id="Any-items-in-the-env-entry-below-will-be-added-as"><a href="#Any-items-in-the-env-entry-below-will-be-added-as" class="headerlink" title="Any items in the env entry below will be added as"></a>Any items in the <code>env</code> entry below will be added as</h1><h1 id="environment-variables-Some-entries-may-override-variables"><a href="#environment-variables-Some-entries-may-override-variables" class="headerlink" title="environment variables. Some entries may override variables"></a>environment variables. Some entries may override variables</h1><h1 id="set-by-alacritty-itself"><a href="#set-by-alacritty-itself" class="headerlink" title="set by alacritty itself."></a>set by alacritty itself.</h1><p>#env:</p>
-<h1 id="TERM-variable"><a href="#TERM-variable" class="headerlink" title="TERM variable"></a>TERM variable</h1><p>  #</p>
-<h1 id="This-value-is-used-to-set-the-TERM-environment-variable-for"><a href="#This-value-is-used-to-set-the-TERM-environment-variable-for" class="headerlink" title="This value is used to set the $TERM environment variable for"></a>This value is used to set the <code>$TERM</code> environment variable for</h1><h1 id="each-instance-of-Alacritty-If-it-is-not-present-alacritty-will"><a href="#each-instance-of-Alacritty-If-it-is-not-present-alacritty-will" class="headerlink" title="each instance of Alacritty. If it is not present, alacritty will"></a>each instance of Alacritty. If it is not present, alacritty will</h1><h1 id="check-the-local-terminfo-database-and-use-alacritty-if-it-is"><a href="#check-the-local-terminfo-database-and-use-alacritty-if-it-is" class="headerlink" title="check the local terminfo database and use alacritty if it is"></a>check the local terminfo database and use <code>alacritty</code> if it is</h1><h1 id="available-otherwise-xterm-256color-is-used"><a href="#available-otherwise-xterm-256color-is-used" class="headerlink" title="available, otherwise xterm-256color is used."></a>available, otherwise <code>xterm-256color</code> is used.</h1><p>  #TERM: alacritty</p>
-<p>#window:</p>
-<h1 id="Window-dimensions-changes-require-restart"><a href="#Window-dimensions-changes-require-restart" class="headerlink" title="Window dimensions (changes require restart)"></a>Window dimensions (changes require restart)</h1><p>  #</p>
-<h1 id="Specified-in-number-of-columns-lines-not-pixels"><a href="#Specified-in-number-of-columns-lines-not-pixels" class="headerlink" title="Specified in number of columns/lines, not pixels."></a>Specified in number of columns/lines, not pixels.</h1><h1 id="If-both-are-0-this-setting-is-ignored"><a href="#If-both-are-0-this-setting-is-ignored" class="headerlink" title="If both are 0, this setting is ignored."></a>If both are <code>0</code>, this setting is ignored.</h1><p>  #dimensions:</p>
-<h1 id="columns-0"><a href="#columns-0" class="headerlink" title="columns: 0"></a>columns: 0</h1><h1 id="lines-0"><a href="#lines-0" class="headerlink" title="lines: 0"></a>lines: 0</h1><h1 id="Window-position-changes-require-restart"><a href="#Window-position-changes-require-restart" class="headerlink" title="Window position (changes require restart)"></a>Window position (changes require restart)</h1><p>  #</p>
-<h1 id="Specified-in-number-of-pixels"><a href="#Specified-in-number-of-pixels" class="headerlink" title="Specified in number of pixels."></a>Specified in number of pixels.</h1><h1 id="If-the-position-is-not-set-the-window-manager-will-handle-the-placement"><a href="#If-the-position-is-not-set-the-window-manager-will-handle-the-placement" class="headerlink" title="If the position is not set, the window manager will handle the placement."></a>If the position is not set, the window manager will handle the placement.</h1><p>  #position:</p>
-<h1 id="x-0"><a href="#x-0" class="headerlink" title="x: 0"></a>x: 0</h1><h1 id="y-0"><a href="#y-0" class="headerlink" title="y: 0"></a>y: 0</h1><h1 id="Window-padding-changes-require-restart"><a href="#Window-padding-changes-require-restart" class="headerlink" title="Window padding (changes require restart)"></a>Window padding (changes require restart)</h1><p>  #</p>
-<h1 id="Blank-space-added-around-the-window-in-pixels-This-padding-is-scaled"><a href="#Blank-space-added-around-the-window-in-pixels-This-padding-is-scaled" class="headerlink" title="Blank space added around the window in pixels. This padding is scaled"></a>Blank space added around the window in pixels. This padding is scaled</h1><h1 id="by-DPI-and-the-specified-value-is-always-added-at-both-opposing-sides"><a href="#by-DPI-and-the-specified-value-is-always-added-at-both-opposing-sides" class="headerlink" title="by DPI and the specified value is always added at both opposing sides."></a>by DPI and the specified value is always added at both opposing sides.</h1><p>  #padding:</p>
-<h1 id="x-0-1"><a href="#x-0-1" class="headerlink" title="x: 0"></a>x: 0</h1><h1 id="y-0-1"><a href="#y-0-1" class="headerlink" title="y: 0"></a>y: 0</h1><h1 id="Spread-additional-padding-evenly-around-the-terminal-content"><a href="#Spread-additional-padding-evenly-around-the-terminal-content" class="headerlink" title="Spread additional padding evenly around the terminal content."></a>Spread additional padding evenly around the terminal content.</h1><p>  #dynamic_padding: false</p>
-<h1 id="Window-decorations"><a href="#Window-decorations" class="headerlink" title="Window decorations"></a>Window decorations</h1><p>  #</p>
-<h1 id="Values-for-decorations"><a href="#Values-for-decorations" class="headerlink" title="Values for decorations:"></a>Values for <code>decorations</code>:</h1><h1 id="full-Borders-and-title-bar"><a href="#full-Borders-and-title-bar" class="headerlink" title="- full: Borders and title bar"></a>- full: Borders and title bar</h1><h1 id="none-Neither-borders-nor-title-bar"><a href="#none-Neither-borders-nor-title-bar" class="headerlink" title="- none: Neither borders nor title bar"></a>- none: Neither borders nor title bar</h1><p>  #</p>
-<h1 id="Values-for-decorations-macOS-only"><a href="#Values-for-decorations-macOS-only" class="headerlink" title="Values for decorations (macOS only):"></a>Values for <code>decorations</code> (macOS only):</h1><h1 id="transparent-Title-bar-transparent-background-and-title-bar-buttons"><a href="#transparent-Title-bar-transparent-background-and-title-bar-buttons" class="headerlink" title="- transparent: Title bar, transparent background and title bar buttons"></a>- transparent: Title bar, transparent background and title bar buttons</h1><h1 id="buttonless-Title-bar-transparent-background-but-no-title-bar-buttons"><a href="#buttonless-Title-bar-transparent-background-but-no-title-bar-buttons" class="headerlink" title="- buttonless: Title bar, transparent background, but no title bar buttons"></a>- buttonless: Title bar, transparent background, but no title bar buttons</h1><p>  #decorations: full</p>
-<h1 id="Startup-Mode-changes-require-restart"><a href="#Startup-Mode-changes-require-restart" class="headerlink" title="Startup Mode (changes require restart)"></a>Startup Mode (changes require restart)</h1><p>  #</p>
-<h1 id="Values-for-startup-mode"><a href="#Values-for-startup-mode" class="headerlink" title="Values for startup_mode:"></a>Values for <code>startup_mode</code>:</h1><h1 id="Windowed"><a href="#Windowed" class="headerlink" title="- Windowed"></a>- Windowed</h1><h1 id="Maximized"><a href="#Maximized" class="headerlink" title="- Maximized"></a>- Maximized</h1><h1 id="Fullscreen"><a href="#Fullscreen" class="headerlink" title="- Fullscreen"></a>- Fullscreen</h1><p>  #</p>
-<h1 id="Values-for-startup-mode-macOS-only"><a href="#Values-for-startup-mode-macOS-only" class="headerlink" title="Values for startup_mode (macOS only):"></a>Values for <code>startup_mode</code> (macOS only):</h1><h1 id="SimpleFullscreen"><a href="#SimpleFullscreen" class="headerlink" title="- SimpleFullscreen"></a>- SimpleFullscreen</h1><p>  #startup_mode: Windowed</p>
-<h1 id="Window-title"><a href="#Window-title" class="headerlink" title="Window title"></a>Window title</h1><p>  #title: Alacritty</p>
-<h1 id="Window-class-Linux-BSD-only"><a href="#Window-class-Linux-BSD-only" class="headerlink" title="Window class (Linux/BSD only):"></a>Window class (Linux/BSD only):</h1><p>  #class:</p>
-<pre><code># Application instance name
-#instance: Alacritty
-# General application class
-#general: Alacritty
-</code></pre><h1 id="GTK-theme-variant-Linux-BSD-only"><a href="#GTK-theme-variant-Linux-BSD-only" class="headerlink" title="GTK theme variant (Linux/BSD only)"></a>GTK theme variant (Linux/BSD only)</h1><p>  #</p>
-<h1 id="Override-the-variant-of-the-GTK-theme-Commonly-supported-values-are-dark-and-light"><a href="#Override-the-variant-of-the-GTK-theme-Commonly-supported-values-are-dark-and-light" class="headerlink" title="Override the variant of the GTK theme. Commonly supported values are dark and light."></a>Override the variant of the GTK theme. Commonly supported values are <code>dark</code> and <code>light</code>.</h1><h1 id="Set-this-to-None-to-use-the-default-theme-variant"><a href="#Set-this-to-None-to-use-the-default-theme-variant" class="headerlink" title="Set this to None to use the default theme variant."></a>Set this to <code>None</code> to use the default theme variant.</h1><p>  #gtk_theme_variant: None</p>
-<p>#scrolling:</p>
-<h1 id="Maximum-number-of-lines-in-the-scrollback-buffer"><a href="#Maximum-number-of-lines-in-the-scrollback-buffer" class="headerlink" title="Maximum number of lines in the scrollback buffer."></a>Maximum number of lines in the scrollback buffer.</h1><h1 id="Specifying-‘0’-will-disable-scrolling"><a href="#Specifying-‘0’-will-disable-scrolling" class="headerlink" title="Specifying ‘0’ will disable scrolling."></a>Specifying ‘0’ will disable scrolling.</h1><p>  #history: 10000</p>
-<h1 id="Number-of-lines-the-viewport-will-move-for-every-line-scrolled-when"><a href="#Number-of-lines-the-viewport-will-move-for-every-line-scrolled-when" class="headerlink" title="Number of lines the viewport will move for every line scrolled when"></a>Number of lines the viewport will move for every line scrolled when</h1><h1 id="scrollback-is-enabled-history-gt-0"><a href="#scrollback-is-enabled-history-gt-0" class="headerlink" title="scrollback is enabled (history &gt; 0)."></a>scrollback is enabled (history &gt; 0).</h1><p>  #multiplier: 3</p>
-<h1 id="Font-configuration"><a href="#Font-configuration" class="headerlink" title="Font configuration"></a>Font configuration</h1><p>font:</p>
-<h1 id="Normal-roman-font-face"><a href="#Normal-roman-font-face" class="headerlink" title="Normal (roman) font face"></a>Normal (roman) font face</h1><p>  normal:</p>
-<pre><code># Font family
+<pre><code># Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+# Any items in the `env` entry below will be added as
+# environment variables. Some entries may override variables
+# set by alacritty itself.
+#env:
+  # TERM variable
+  #
+  # This value is used to set the `$TERM` environment variable for
+  # each instance of Alacritty. If it is not present, alacritty will
+  # check the local terminfo database and use `alacritty` if it is
+  # available, otherwise `xterm-256color` is used.
+  #TERM: alacritty
+
+#window:
+  # Window dimensions (changes require restart)
+  #
+  # Specified in number of columns/lines, not pixels.
+  # If both are `0`, this setting is ignored.
+  #dimensions:
+  #  columns: 0
+  #  lines: 0
+
+  # Window position (changes require restart)
+  #
+  # Specified in number of pixels.
+  # If the position is not set, the window manager will handle the placement.
+  #position:
+  #  x: 0
+  #  y: 0
+
+  # Window padding (changes require restart)
+  #
+  # Blank space added around the window in pixels. This padding is scaled
+  # by DPI and the specified value is always added at both opposing sides.
+  #padding:
+  #  x: 0
+  #  y: 0
+
+  # Spread additional padding evenly around the terminal content.
+  #dynamic_padding: false
+
+  # Window decorations
+  #
+  # Values for `decorations`:
+  #     - full: Borders and title bar
+  #     - none: Neither borders nor title bar
+  #
+  # Values for `decorations` (macOS only):
+  #     - transparent: Title bar, transparent background and title bar buttons
+  #     - buttonless: Title bar, transparent background, but no title bar buttons
+  #decorations: full
+
+  # Startup Mode (changes require restart)
+  #
+  # Values for `startup_mode`:
+  #   - Windowed
+  #   - Maximized
+  #   - Fullscreen
+  #
+  # Values for `startup_mode` (macOS only):
+  #   - SimpleFullscreen
+  #startup_mode: Windowed
+
+  # Window title
+  #title: Alacritty
+
+  # Window class (Linux/BSD only):
+  #class:
+    # Application instance name
+    #instance: Alacritty
+    # General application class
+    #general: Alacritty
+
+  # GTK theme variant (Linux/BSD only)
+  #
+  # Override the variant of the GTK theme. Commonly supported values are `dark` and `light`.
+  # Set this to `None` to use the default theme variant.
+  #gtk_theme_variant: None
+
+#scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying &#39;0&#39; will disable scrolling.
+  #history: 10000
+
+  # Number of lines the viewport will move for every line scrolled when
+  # scrollback is enabled (history &gt; 0).
+  #multiplier: 3
+
+# Font configuration
+font:
+  # Normal (roman) font face
+  normal:
+    # Font family
+    #
+    # Default:
+    #   - (macOS) Menlo
+    #   - (Linux/BSD) monospace
+    #   - (Windows) Consolas
+    family: Hack
+
+    # The `style` can be specified to pick a specific face.
+    #style: Regular
+
+  # Bold font face
+  bold:
+    # Font family
+    #
+    # If the bold family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: Hack
+
+    # The `style` can be specified to pick a specific face.
+    #style: Bold
+
+  # Italic font face
+  italic:
+    # Font family
+    #
+    # If the italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    family: Hack
+
+    # The `style` can be specified to pick a specific face.
+    #style: Italic
+
+  # Bold italic font face
+  #bold_italic:
+    # Font family
+    #
+    # If the bold italic family is not specified, it will fall back to the
+    # value specified for the normal font.
+    #family: monospace
+
+    # The `style` can be specified to pick a specific face.
+    #style: Bold Italic
+
+  # Point size
+  size: 12.0
+
+  # Offset is the extra space around each character. `offset.y` can be thought of
+  # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
+  #offset:
+  #  x: 0
+  #  y: 0
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increasing `x` moves the glyph to the right,
+  # increasing `y` moves the glyph upwards.
+  #glyph_offset:
+  #  x: 0
+  #  y: 0
+
+  # Thin stroke font rendering (macOS only)
+  #
+  # Thin strokes are suitable for retina displays, but for non-retina screens
+  # it is recommended to set `use_thin_strokes` to `false`
+  #
+  # macOS &gt;= 10.14.x:
+  #
+  # If the font quality on non-retina display looks bad then set
+  # `use_thin_strokes` to `true` and enable font smoothing by running the
+  # following command:
+  #   `defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO`
+  #
+  # This is a global setting and will require a log out or restart to take
+  # effect.
+  #use_thin_strokes: true
+
+# If `true`, bold text is drawn using the bright color variants.
+#draw_bold_text_with_bright_colors: false
+
+# Colors (Tomorrow Night Bright)
+colors:
+  # Default colors
+  primary:
+    background: &#39;0x282a36&#39;
+    foreground: &#39;0xf8f8f2&#39;
+
+  # Normal colors
+  normal:
+    black:   &#39;0x44475a&#39;
+    red:     &#39;0xff5555&#39;
+    green:   &#39;0x50fa7b&#39;
+    yellow:  &#39;0xf1fa8c&#39;
+    blue:    &#39;0xbd93f9&#39;
+    magenta: &#39;0xff79c6&#39;
+    cyan:    &#39;0x8be9fd&#39;
+    white:   &#39;0xffffff&#39;
+
+  # Bright colors
+  bright:
+    black:   &#39;0x44475a&#39;
+    red:     &#39;0xff5555&#39;
+    green:   &#39;0x50fa7b&#39;
+    yellow:  &#39;0xf1fa8c&#39;
+    blue:    &#39;0xbd93f9&#39;
+    magenta: &#39;0xff79c6&#39;
+    cyan:    &#39;0x8be9fd&#39;
+    white:   &#39;0xffffff&#39;
+
+    # Bright and dim foreground colors
+    #
+    # The dimmed foreground color is calculated automatically if it is not present.
+    # If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
+    # is `false`, the normal foreground color will be used.
+    #dim_foreground: &#39;#9a9a9a&#39;
+    #bright_foreground: &#39;#ffffff&#39;
+
+  # Cursor colors
+  #
+  # Colors which should be used to draw the terminal cursor. If these are unset,
+  # the cursor color will be the inverse of the cell color.
+  #cursor:
+  #  text: &#39;#000000&#39;
+  #  cursor: &#39;#ffffff&#39;
+
+  # Selection colors
+  #
+  # Colors which should be used to draw the selection area. If selection
+  # background is unset, selection color will be the inverse of the cell colors.
+  # If only text is unset the cell text color will remain the same.
+  #selection:
+  #  text: &#39;#eaeaea&#39;
+  #  background: &#39;#404040&#39;
+
+  # Normal colors
+  #normal:
+  #  black:   &#39;#000000&#39;
+  #  red:     &#39;#d54e53&#39;
+  #  green:   &#39;#b9ca4a&#39;
+  #  yellow:  &#39;#e6c547&#39;
+  #  blue:    &#39;#7aa6da&#39;
+  #  magenta: &#39;#c397d8&#39;
+  #  cyan:    &#39;#70c0ba&#39;
+  #  white:   &#39;#eaeaea&#39;
+
+  # Bright colors
+  #bright:
+  #  black:   &#39;#666666&#39;
+  #  red:     &#39;#ff3334&#39;
+  #  green:   &#39;#9ec400&#39;
+  #  yellow:  &#39;#e7c547&#39;
+  #  blue:    &#39;#7aa6da&#39;
+  #  magenta: &#39;#b77ee0&#39;
+  #  cyan:    &#39;#54ced6&#39;
+  #  white:   &#39;#ffffff&#39;
+
+  # Dim colors
+  #
+  # If the dim colors are not set, they will be calculated automatically based
+  # on the `normal` colors.
+  #dim:
+  #  black:   &#39;#000000&#39;
+  #  red:     &#39;#8c3336&#39;
+  #  green:   &#39;#7a8530&#39;
+  #  yellow:  &#39;#97822e&#39;
+  #  blue:    &#39;#506d8f&#39;
+  #  magenta: &#39;#80638e&#39;
+  #  cyan:    &#39;#497e7a&#39;
+  #  white:   &#39;#9a9a9a&#39;
+
+  # Indexed Colors
+  #
+  # The indexed colors include all colors from 16 to 256.
+  # When these are not set, they&#39;re filled with sensible defaults.
+  #
+  # Example:
+  #   `- { index: 16, color: &#39;#ff00ff&#39; }`
+  #
+  #indexed_colors: []
+
+# Visual Bell
+#
+# Any time the BEL code is received, Alacritty &quot;rings&quot; the visual bell. Once
+# rung, the terminal background will be set to white and transition back to the
+# default background color. You can control the rate of this transition by
+# setting the `duration` property (represented in milliseconds). You can also
+# configure the transition function by setting the `animation` property.
+#
+# Values for `animation`:
+#   - Ease
+#   - EaseOut
+#   - EaseOutSine
+#   - EaseOutQuad
+#   - EaseOutCubic
+#   - EaseOutQuart
+#   - EaseOutQuint
+#   - EaseOutExpo
+#   - EaseOutCirc
+#   - Linear
+#
+# Specifying a `duration` of `0` will disable the visual bell.
+#visual_bell:
+#  animation: EaseOutExpo
+#  duration: 0
+#  color: &#39;#ffffff&#39;
+
+# Background opacity
+#
+# Window opacity as a floating point number from `0.0` to `1.0`.
+# The value `0.0` is completely transparent and `1.0` is opaque.
+background_opacity: 0.8
+
+#selection:
+  #semantic_escape_chars: &quot;,│`|:\&quot;&#39; ()[]{}&lt;&gt;\t&quot;
+
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  #save_to_clipboard: false
+
+# Allow terminal applications to change Alacritty&#39;s window title.
+#dynamic_title: true
+
+#cursor:
+  # Cursor style
+  #
+  # Values for `style`:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  #style: Block
+
+  # If this is `true`, the cursor will be rendered as a hollow box when the
+  # window is not focused.
+  #unfocused_hollow: true
+
+# Live config reload (changes require restart)
+#live_config_reload: true
+
+# Shell
+#
+# You can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
+# Entries in `shell.args` are passed unmodified as arguments to the shell.
 #
 # Default:
-#   - (macOS) Menlo
-#   - (Linux/BSD) monospace
-#   - (Windows) Consolas
-family: Hack
+#   - (macOS) /bin/bash --login
+#   - (Linux/BSD) user login shell
+#   - (Windows) powershell
+#shell:
+#  program: /bin/bash
+#  args:
+#    - --login
 
-# The `style` can be specified to pick a specific face.
-#style: Regular
-</code></pre><h1 id="Bold-font-face"><a href="#Bold-font-face" class="headerlink" title="Bold font face"></a>Bold font face</h1><p>  bold:</p>
-<pre><code># Font family
+# Startup directory
 #
-# If the bold family is not specified, it will fall back to the
-# value specified for the normal font.
-family: Hack
+# Directory the shell is started in. If this is unset, or `None`, the working
+# directory of the parent process will be used.
+#working_directory: None
 
-# The `style` can be specified to pick a specific face.
-#style: Bold
-</code></pre><h1 id="Italic-font-face"><a href="#Italic-font-face" class="headerlink" title="Italic font face"></a>Italic font face</h1><p>  italic:</p>
-<pre><code># Font family
+# WinPTY backend (Windows only)
 #
-# If the italic family is not specified, it will fall back to the
-# value specified for the normal font.
-family: Hack
+# Alacritty defaults to using the newer ConPTY backend if it is available,
+# since it resolves a lot of bugs and is quite a bit faster. If it is not
+# available, the the WinPTY backend will be used instead.
+#
+# Setting this option to `true` makes Alacritty use the legacy WinPTY backend,
+# even if the ConPTY backend is available.
+#winpty_backend: false
 
-# The `style` can be specified to pick a specific face.
-#style: Italic
-</code></pre><h1 id="Bold-italic-font-face"><a href="#Bold-italic-font-face" class="headerlink" title="Bold italic font face"></a>Bold italic font face</h1><p>  #bold_italic:</p>
-<pre><code># Font family
-#
-# If the bold italic family is not specified, it will fall back to the
-# value specified for the normal font.
-#family: monospace
+# Send ESC (\x1b) before characters when alt is pressed.
+#alt_send_esc: true
 
-# The `style` can be specified to pick a specific face.
-#style: Bold Italic
-</code></pre><h1 id="Point-size"><a href="#Point-size" class="headerlink" title="Point size"></a>Point size</h1><p>  size: 12.0</p>
-<h1 id="Offset-is-the-extra-space-around-each-character-offset-y-can-be-thought-of"><a href="#Offset-is-the-extra-space-around-each-character-offset-y-can-be-thought-of" class="headerlink" title="Offset is the extra space around each character. offset.y can be thought of"></a>Offset is the extra space around each character. <code>offset.y</code> can be thought of</h1><h1 id="as-modifying-the-line-spacing-and-offset-x-as-modifying-the-letter-spacing"><a href="#as-modifying-the-line-spacing-and-offset-x-as-modifying-the-letter-spacing" class="headerlink" title="as modifying the line spacing, and offset.x as modifying the letter spacing."></a>as modifying the line spacing, and <code>offset.x</code> as modifying the letter spacing.</h1><p>  #offset:</p>
-<h1 id="x-0-2"><a href="#x-0-2" class="headerlink" title="x: 0"></a>x: 0</h1><h1 id="y-0-2"><a href="#y-0-2" class="headerlink" title="y: 0"></a>y: 0</h1><h1 id="Glyph-offset-determines-the-locations-of-the-glyphs-within-their-cells-with"><a href="#Glyph-offset-determines-the-locations-of-the-glyphs-within-their-cells-with" class="headerlink" title="Glyph offset determines the locations of the glyphs within their cells with"></a>Glyph offset determines the locations of the glyphs within their cells with</h1><h1 id="the-default-being-at-the-bottom-Increasing-x-moves-the-glyph-to-the-right"><a href="#the-default-being-at-the-bottom-Increasing-x-moves-the-glyph-to-the-right" class="headerlink" title="the default being at the bottom. Increasing x moves the glyph to the right,"></a>the default being at the bottom. Increasing <code>x</code> moves the glyph to the right,</h1><h1 id="increasing-y-moves-the-glyph-upwards"><a href="#increasing-y-moves-the-glyph-upwards" class="headerlink" title="increasing y moves the glyph upwards."></a>increasing <code>y</code> moves the glyph upwards.</h1><p>  #glyph_offset:</p>
-<h1 id="x-0-3"><a href="#x-0-3" class="headerlink" title="x: 0"></a>x: 0</h1><h1 id="y-0-3"><a href="#y-0-3" class="headerlink" title="y: 0"></a>y: 0</h1><h1 id="Thin-stroke-font-rendering-macOS-only"><a href="#Thin-stroke-font-rendering-macOS-only" class="headerlink" title="Thin stroke font rendering (macOS only)"></a>Thin stroke font rendering (macOS only)</h1><p>  #</p>
-<h1 id="Thin-strokes-are-suitable-for-retina-displays-but-for-non-retina-screens"><a href="#Thin-strokes-are-suitable-for-retina-displays-but-for-non-retina-screens" class="headerlink" title="Thin strokes are suitable for retina displays, but for non-retina screens"></a>Thin strokes are suitable for retina displays, but for non-retina screens</h1><h1 id="it-is-recommended-to-set-use-thin-strokes-to-false"><a href="#it-is-recommended-to-set-use-thin-strokes-to-false" class="headerlink" title="it is recommended to set use_thin_strokes to false"></a>it is recommended to set <code>use_thin_strokes</code> to <code>false</code></h1><p>  #</p>
-<h1 id="macOS-gt-10-14-x"><a href="#macOS-gt-10-14-x" class="headerlink" title="macOS &gt;= 10.14.x:"></a>macOS &gt;= 10.14.x:</h1><p>  #</p>
-<h1 id="If-the-font-quality-on-non-retina-display-looks-bad-then-set"><a href="#If-the-font-quality-on-non-retina-display-looks-bad-then-set" class="headerlink" title="If the font quality on non-retina display looks bad then set"></a>If the font quality on non-retina display looks bad then set</h1><h1 id="use-thin-strokes-to-true-and-enable-font-smoothing-by-running-the"><a href="#use-thin-strokes-to-true-and-enable-font-smoothing-by-running-the" class="headerlink" title="use_thin_strokes to true and enable font smoothing by running the"></a><code>use_thin_strokes</code> to <code>true</code> and enable font smoothing by running the</h1><h1 id="following-command"><a href="#following-command" class="headerlink" title="following command:"></a>following command:</h1><h1 id="defaults-write-g-CGFontRenderingFontSmoothingDisabled-bool-NO"><a href="#defaults-write-g-CGFontRenderingFontSmoothingDisabled-bool-NO" class="headerlink" title="defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO"></a><code>defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO</code></h1><p>  #</p>
-<h1 id="This-is-a-global-setting-and-will-require-a-log-out-or-restart-to-take"><a href="#This-is-a-global-setting-and-will-require-a-log-out-or-restart-to-take" class="headerlink" title="This is a global setting and will require a log out or restart to take"></a>This is a global setting and will require a log out or restart to take</h1><h1 id="effect"><a href="#effect" class="headerlink" title="effect."></a>effect.</h1><p>  #use_thin_strokes: true</p>
-<h1 id="If-true-bold-text-is-drawn-using-the-bright-color-variants"><a href="#If-true-bold-text-is-drawn-using-the-bright-color-variants" class="headerlink" title="If true, bold text is drawn using the bright color variants."></a>If <code>true</code>, bold text is drawn using the bright color variants.</h1><p>#draw_bold_text_with_bright_colors: false</p>
-<h1 id="Colors-Tomorrow-Night-Bright"><a href="#Colors-Tomorrow-Night-Bright" class="headerlink" title="Colors (Tomorrow Night Bright)"></a>Colors (Tomorrow Night Bright)</h1><p>colors:</p>
-<h1 id="Default-colors"><a href="#Default-colors" class="headerlink" title="Default colors"></a>Default colors</h1><p>  primary:<br>    background: ‘0x282a36’<br>    foreground: ‘0xf8f8f2’</p>
-<h1 id="Normal-colors"><a href="#Normal-colors" class="headerlink" title="Normal colors"></a>Normal colors</h1><p>  normal:<br>    black:   ‘0x44475a’<br>    red:     ‘0xff5555’<br>    green:   ‘0x50fa7b’<br>    yellow:  ‘0xf1fa8c’<br>    blue:    ‘0xbd93f9’<br>    magenta: ‘0xff79c6’<br>    cyan:    ‘0x8be9fd’<br>    white:   ‘0xffffff’</p>
-<h1 id="Bright-colors"><a href="#Bright-colors" class="headerlink" title="Bright colors"></a>Bright colors</h1><p>  bright:<br>    black:   ‘0x44475a’<br>    red:     ‘0xff5555’<br>    green:   ‘0x50fa7b’<br>    yellow:  ‘0xf1fa8c’<br>    blue:    ‘0xbd93f9’<br>    magenta: ‘0xff79c6’<br>    cyan:    ‘0x8be9fd’<br>    white:   ‘0xffffff’</p>
-<pre><code># Bright and dim foreground colors
-#
-# The dimmed foreground color is calculated automatically if it is not present.
-# If the bright foreground color is not set, or `draw_bold_text_with_bright_colors`
-# is `false`, the normal foreground color will be used.
-#dim_foreground: &#39;#9a9a9a&#39;
-#bright_foreground: &#39;#ffffff&#39;
-</code></pre><h1 id="Cursor-colors"><a href="#Cursor-colors" class="headerlink" title="Cursor colors"></a>Cursor colors</h1><p>  #</p>
-<h1 id="Colors-which-should-be-used-to-draw-the-terminal-cursor-If-these-are-unset"><a href="#Colors-which-should-be-used-to-draw-the-terminal-cursor-If-these-are-unset" class="headerlink" title="Colors which should be used to draw the terminal cursor. If these are unset,"></a>Colors which should be used to draw the terminal cursor. If these are unset,</h1><h1 id="the-cursor-color-will-be-the-inverse-of-the-cell-color"><a href="#the-cursor-color-will-be-the-inverse-of-the-cell-color" class="headerlink" title="the cursor color will be the inverse of the cell color."></a>the cursor color will be the inverse of the cell color.</h1><p>  #cursor:</p>
-<h1 id="text-‘-000000’"><a href="#text-‘-000000’" class="headerlink" title="text: ‘#000000’"></a>text: ‘#000000’</h1><h1 id="cursor-‘-ffffff’"><a href="#cursor-‘-ffffff’" class="headerlink" title="cursor: ‘#ffffff’"></a>cursor: ‘#ffffff’</h1><h1 id="Selection-colors"><a href="#Selection-colors" class="headerlink" title="Selection colors"></a>Selection colors</h1><p>  #</p>
-<h1 id="Colors-which-should-be-used-to-draw-the-selection-area-If-selection"><a href="#Colors-which-should-be-used-to-draw-the-selection-area-If-selection" class="headerlink" title="Colors which should be used to draw the selection area. If selection"></a>Colors which should be used to draw the selection area. If selection</h1><h1 id="background-is-unset-selection-color-will-be-the-inverse-of-the-cell-colors"><a href="#background-is-unset-selection-color-will-be-the-inverse-of-the-cell-colors" class="headerlink" title="background is unset, selection color will be the inverse of the cell colors."></a>background is unset, selection color will be the inverse of the cell colors.</h1><h1 id="If-only-text-is-unset-the-cell-text-color-will-remain-the-same"><a href="#If-only-text-is-unset-the-cell-text-color-will-remain-the-same" class="headerlink" title="If only text is unset the cell text color will remain the same."></a>If only text is unset the cell text color will remain the same.</h1><p>  #selection:</p>
-<h1 id="text-‘-eaeaea’"><a href="#text-‘-eaeaea’" class="headerlink" title="text: ‘#eaeaea’"></a>text: ‘#eaeaea’</h1><h1 id="background-‘-404040’"><a href="#background-‘-404040’" class="headerlink" title="background: ‘#404040’"></a>background: ‘#404040’</h1><h1 id="Normal-colors-1"><a href="#Normal-colors-1" class="headerlink" title="Normal colors"></a>Normal colors</h1><p>  #normal:</p>
-<h1 id="black-‘-000000’"><a href="#black-‘-000000’" class="headerlink" title="black:   ‘#000000’"></a>black:   ‘#000000’</h1><h1 id="red-‘-d54e53’"><a href="#red-‘-d54e53’" class="headerlink" title="red:     ‘#d54e53’"></a>red:     ‘#d54e53’</h1><h1 id="green-‘-b9ca4a’"><a href="#green-‘-b9ca4a’" class="headerlink" title="green:   ‘#b9ca4a’"></a>green:   ‘#b9ca4a’</h1><h1 id="yellow-‘-e6c547’"><a href="#yellow-‘-e6c547’" class="headerlink" title="yellow:  ‘#e6c547’"></a>yellow:  ‘#e6c547’</h1><h1 id="blue-‘-7aa6da’"><a href="#blue-‘-7aa6da’" class="headerlink" title="blue:    ‘#7aa6da’"></a>blue:    ‘#7aa6da’</h1><h1 id="magenta-‘-c397d8’"><a href="#magenta-‘-c397d8’" class="headerlink" title="magenta: ‘#c397d8’"></a>magenta: ‘#c397d8’</h1><h1 id="cyan-‘-70c0ba’"><a href="#cyan-‘-70c0ba’" class="headerlink" title="cyan:    ‘#70c0ba’"></a>cyan:    ‘#70c0ba’</h1><h1 id="white-‘-eaeaea’"><a href="#white-‘-eaeaea’" class="headerlink" title="white:   ‘#eaeaea’"></a>white:   ‘#eaeaea’</h1><h1 id="Bright-colors-1"><a href="#Bright-colors-1" class="headerlink" title="Bright colors"></a>Bright colors</h1><p>  #bright:</p>
-<h1 id="black-‘-666666’"><a href="#black-‘-666666’" class="headerlink" title="black:   ‘#666666’"></a>black:   ‘#666666’</h1><h1 id="red-‘-ff3334’"><a href="#red-‘-ff3334’" class="headerlink" title="red:     ‘#ff3334’"></a>red:     ‘#ff3334’</h1><h1 id="green-‘-9ec400’"><a href="#green-‘-9ec400’" class="headerlink" title="green:   ‘#9ec400’"></a>green:   ‘#9ec400’</h1><h1 id="yellow-‘-e7c547’"><a href="#yellow-‘-e7c547’" class="headerlink" title="yellow:  ‘#e7c547’"></a>yellow:  ‘#e7c547’</h1><h1 id="blue-‘-7aa6da’-1"><a href="#blue-‘-7aa6da’-1" class="headerlink" title="blue:    ‘#7aa6da’"></a>blue:    ‘#7aa6da’</h1><h1 id="magenta-‘-b77ee0’"><a href="#magenta-‘-b77ee0’" class="headerlink" title="magenta: ‘#b77ee0’"></a>magenta: ‘#b77ee0’</h1><h1 id="cyan-‘-54ced6’"><a href="#cyan-‘-54ced6’" class="headerlink" title="cyan:    ‘#54ced6’"></a>cyan:    ‘#54ced6’</h1><h1 id="white-‘-ffffff’"><a href="#white-‘-ffffff’" class="headerlink" title="white:   ‘#ffffff’"></a>white:   ‘#ffffff’</h1><h1 id="Dim-colors"><a href="#Dim-colors" class="headerlink" title="Dim colors"></a>Dim colors</h1><p>  #</p>
-<h1 id="If-the-dim-colors-are-not-set-they-will-be-calculated-automatically-based"><a href="#If-the-dim-colors-are-not-set-they-will-be-calculated-automatically-based" class="headerlink" title="If the dim colors are not set, they will be calculated automatically based"></a>If the dim colors are not set, they will be calculated automatically based</h1><h1 id="on-the-normal-colors"><a href="#on-the-normal-colors" class="headerlink" title="on the normal colors."></a>on the <code>normal</code> colors.</h1><p>  #dim:</p>
-<h1 id="black-‘-000000’-1"><a href="#black-‘-000000’-1" class="headerlink" title="black:   ‘#000000’"></a>black:   ‘#000000’</h1><h1 id="red-‘-8c3336’"><a href="#red-‘-8c3336’" class="headerlink" title="red:     ‘#8c3336’"></a>red:     ‘#8c3336’</h1><h1 id="green-‘-7a8530’"><a href="#green-‘-7a8530’" class="headerlink" title="green:   ‘#7a8530’"></a>green:   ‘#7a8530’</h1><h1 id="yellow-‘-97822e’"><a href="#yellow-‘-97822e’" class="headerlink" title="yellow:  ‘#97822e’"></a>yellow:  ‘#97822e’</h1><h1 id="blue-‘-506d8f’"><a href="#blue-‘-506d8f’" class="headerlink" title="blue:    ‘#506d8f’"></a>blue:    ‘#506d8f’</h1><h1 id="magenta-‘-80638e’"><a href="#magenta-‘-80638e’" class="headerlink" title="magenta: ‘#80638e’"></a>magenta: ‘#80638e’</h1><h1 id="cyan-‘-497e7a’"><a href="#cyan-‘-497e7a’" class="headerlink" title="cyan:    ‘#497e7a’"></a>cyan:    ‘#497e7a’</h1><h1 id="white-‘-9a9a9a’"><a href="#white-‘-9a9a9a’" class="headerlink" title="white:   ‘#9a9a9a’"></a>white:   ‘#9a9a9a’</h1><h1 id="Indexed-Colors"><a href="#Indexed-Colors" class="headerlink" title="Indexed Colors"></a>Indexed Colors</h1><p>  #</p>
-<h1 id="The-indexed-colors-include-all-colors-from-16-to-256"><a href="#The-indexed-colors-include-all-colors-from-16-to-256" class="headerlink" title="The indexed colors include all colors from 16 to 256."></a>The indexed colors include all colors from 16 to 256.</h1><h1 id="When-these-are-not-set-they’re-filled-with-sensible-defaults"><a href="#When-these-are-not-set-they’re-filled-with-sensible-defaults" class="headerlink" title="When these are not set, they’re filled with sensible defaults."></a>When these are not set, they’re filled with sensible defaults.</h1><p>  #</p>
-<h1 id="Example"><a href="#Example" class="headerlink" title="Example:"></a>Example:</h1><h1 id="index-16-color-39-ff00ff-39"><a href="#index-16-color-39-ff00ff-39" class="headerlink" title="- { index: 16, color: &#39;#ff00ff&#39; }"></a><code>- { index: 16, color: &#39;#ff00ff&#39; }</code></h1><p>  #</p>
-<p>  #indexed_colors: []</p>
-<h1 id="Visual-Bell"><a href="#Visual-Bell" class="headerlink" title="Visual Bell"></a>Visual Bell</h1><p>#</p>
-<h1 id="Any-time-the-BEL-code-is-received-Alacritty-“rings”-the-visual-bell-Once"><a href="#Any-time-the-BEL-code-is-received-Alacritty-“rings”-the-visual-bell-Once" class="headerlink" title="Any time the BEL code is received, Alacritty “rings” the visual bell. Once"></a>Any time the BEL code is received, Alacritty “rings” the visual bell. Once</h1><h1 id="rung-the-terminal-background-will-be-set-to-white-and-transition-back-to-the"><a href="#rung-the-terminal-background-will-be-set-to-white-and-transition-back-to-the" class="headerlink" title="rung, the terminal background will be set to white and transition back to the"></a>rung, the terminal background will be set to white and transition back to the</h1><h1 id="default-background-color-You-can-control-the-rate-of-this-transition-by"><a href="#default-background-color-You-can-control-the-rate-of-this-transition-by" class="headerlink" title="default background color. You can control the rate of this transition by"></a>default background color. You can control the rate of this transition by</h1><h1 id="setting-the-duration-property-represented-in-milliseconds-You-can-also"><a href="#setting-the-duration-property-represented-in-milliseconds-You-can-also" class="headerlink" title="setting the duration property (represented in milliseconds). You can also"></a>setting the <code>duration</code> property (represented in milliseconds). You can also</h1><h1 id="configure-the-transition-function-by-setting-the-animation-property"><a href="#configure-the-transition-function-by-setting-the-animation-property" class="headerlink" title="configure the transition function by setting the animation property."></a>configure the transition function by setting the <code>animation</code> property.</h1><p>#</p>
-<h1 id="Values-for-animation"><a href="#Values-for-animation" class="headerlink" title="Values for animation:"></a>Values for <code>animation</code>:</h1><h1 id="Ease"><a href="#Ease" class="headerlink" title="- Ease"></a>- Ease</h1><h1 id="EaseOut"><a href="#EaseOut" class="headerlink" title="- EaseOut"></a>- EaseOut</h1><h1 id="EaseOutSine"><a href="#EaseOutSine" class="headerlink" title="- EaseOutSine"></a>- EaseOutSine</h1><h1 id="EaseOutQuad"><a href="#EaseOutQuad" class="headerlink" title="- EaseOutQuad"></a>- EaseOutQuad</h1><h1 id="EaseOutCubic"><a href="#EaseOutCubic" class="headerlink" title="- EaseOutCubic"></a>- EaseOutCubic</h1><h1 id="EaseOutQuart"><a href="#EaseOutQuart" class="headerlink" title="- EaseOutQuart"></a>- EaseOutQuart</h1><h1 id="EaseOutQuint"><a href="#EaseOutQuint" class="headerlink" title="- EaseOutQuint"></a>- EaseOutQuint</h1><h1 id="EaseOutExpo"><a href="#EaseOutExpo" class="headerlink" title="- EaseOutExpo"></a>- EaseOutExpo</h1><h1 id="EaseOutCirc"><a href="#EaseOutCirc" class="headerlink" title="- EaseOutCirc"></a>- EaseOutCirc</h1><h1 id="Linear"><a href="#Linear" class="headerlink" title="- Linear"></a>- Linear</h1><p>#</p>
-<h1 id="Specifying-a-duration-of-0-will-disable-the-visual-bell"><a href="#Specifying-a-duration-of-0-will-disable-the-visual-bell" class="headerlink" title="Specifying a duration of 0 will disable the visual bell."></a>Specifying a <code>duration</code> of <code>0</code> will disable the visual bell.</h1><p>#visual_bell:</p>
-<h1 id="animation-EaseOutExpo"><a href="#animation-EaseOutExpo" class="headerlink" title="animation: EaseOutExpo"></a>animation: EaseOutExpo</h1><h1 id="duration-0"><a href="#duration-0" class="headerlink" title="duration: 0"></a>duration: 0</h1><h1 id="color-‘-ffffff’"><a href="#color-‘-ffffff’" class="headerlink" title="color: ‘#ffffff’"></a>color: ‘#ffffff’</h1><h1 id="Background-opacity"><a href="#Background-opacity" class="headerlink" title="Background opacity"></a>Background opacity</h1><p>#</p>
-<h1 id="Window-opacity-as-a-floating-point-number-from-0-0-to-1-0"><a href="#Window-opacity-as-a-floating-point-number-from-0-0-to-1-0" class="headerlink" title="Window opacity as a floating point number from 0.0 to 1.0."></a>Window opacity as a floating point number from <code>0.0</code> to <code>1.0</code>.</h1><h1 id="The-value-0-0-is-completely-transparent-and-1-0-is-opaque"><a href="#The-value-0-0-is-completely-transparent-and-1-0-is-opaque" class="headerlink" title="The value 0.0 is completely transparent and 1.0 is opaque."></a>The value <code>0.0</code> is completely transparent and <code>1.0</code> is opaque.</h1><p>background_opacity: 0.8</p>
-<p>#selection:</p>
-<p>  #semantic_escape_chars: “,│`|:\”‘ ()[]{}&lt;&gt;\t”</p>
-<h1 id="When-set-to-true-selected-text-will-be-copied-to-the-primary-clipboard"><a href="#When-set-to-true-selected-text-will-be-copied-to-the-primary-clipboard" class="headerlink" title="When set to true, selected text will be copied to the primary clipboard."></a>When set to <code>true</code>, selected text will be copied to the primary clipboard.</h1><p>  #save_to_clipboard: false</p>
-<h1 id="Allow-terminal-applications-to-change-Alacritty’s-window-title"><a href="#Allow-terminal-applications-to-change-Alacritty’s-window-title" class="headerlink" title="Allow terminal applications to change Alacritty’s window title."></a>Allow terminal applications to change Alacritty’s window title.</h1><p>#dynamic_title: true</p>
-<p>#cursor:</p>
-<h1 id="Cursor-style"><a href="#Cursor-style" class="headerlink" title="Cursor style"></a>Cursor style</h1><p>  #</p>
-<h1 id="Values-for-style"><a href="#Values-for-style" class="headerlink" title="Values for style:"></a>Values for <code>style</code>:</h1><h1 id="▇-Block"><a href="#▇-Block" class="headerlink" title="- ▇ Block"></a>- ▇ Block</h1><h1 id="Underline"><a href="#Underline" class="headerlink" title="- _ Underline"></a>- _ Underline</h1><h1 id="Beam"><a href="#Beam" class="headerlink" title="- | Beam"></a>- | Beam</h1><p>  #style: Block</p>
-<h1 id="If-this-is-true-the-cursor-will-be-rendered-as-a-hollow-box-when-the"><a href="#If-this-is-true-the-cursor-will-be-rendered-as-a-hollow-box-when-the" class="headerlink" title="If this is true, the cursor will be rendered as a hollow box when the"></a>If this is <code>true</code>, the cursor will be rendered as a hollow box when the</h1><h1 id="window-is-not-focused"><a href="#window-is-not-focused" class="headerlink" title="window is not focused."></a>window is not focused.</h1><p>  #unfocused_hollow: true</p>
-<h1 id="Live-config-reload-changes-require-restart"><a href="#Live-config-reload-changes-require-restart" class="headerlink" title="Live config reload (changes require restart)"></a>Live config reload (changes require restart)</h1><p>#live_config_reload: true</p>
-<h1 id="Shell"><a href="#Shell" class="headerlink" title="Shell"></a>Shell</h1><p>#</p>
-<h1 id="You-can-set-shell-program-to-the-path-of-your-favorite-shell-e-g-bin-fish"><a href="#You-can-set-shell-program-to-the-path-of-your-favorite-shell-e-g-bin-fish" class="headerlink" title="You can set shell.program to the path of your favorite shell, e.g. /bin/fish."></a>You can set <code>shell.program</code> to the path of your favorite shell, e.g. <code>/bin/fish</code>.</h1><h1 id="Entries-in-shell-args-are-passed-unmodified-as-arguments-to-the-shell"><a href="#Entries-in-shell-args-are-passed-unmodified-as-arguments-to-the-shell" class="headerlink" title="Entries in shell.args are passed unmodified as arguments to the shell."></a>Entries in <code>shell.args</code> are passed unmodified as arguments to the shell.</h1><p>#</p>
-<h1 id="Default"><a href="#Default" class="headerlink" title="Default:"></a>Default:</h1><h1 id="macOS-bin-bash-–login"><a href="#macOS-bin-bash-–login" class="headerlink" title="- (macOS) /bin/bash –login"></a>- (macOS) /bin/bash –login</h1><h1 id="Linux-BSD-user-login-shell"><a href="#Linux-BSD-user-login-shell" class="headerlink" title="- (Linux/BSD) user login shell"></a>- (Linux/BSD) user login shell</h1><h1 id="Windows-powershell"><a href="#Windows-powershell" class="headerlink" title="- (Windows) powershell"></a>- (Windows) powershell</h1><p>#shell:</p>
-<h1 id="program-bin-bash"><a href="#program-bin-bash" class="headerlink" title="program: /bin/bash"></a>program: /bin/bash</h1><h1 id="args"><a href="#args" class="headerlink" title="args:"></a>args:</h1><h1 id="–login"><a href="#–login" class="headerlink" title="- –login"></a>- –login</h1><h1 id="Startup-directory"><a href="#Startup-directory" class="headerlink" title="Startup directory"></a>Startup directory</h1><p>#</p>
-<h1 id="Directory-the-shell-is-started-in-If-this-is-unset-or-None-the-working"><a href="#Directory-the-shell-is-started-in-If-this-is-unset-or-None-the-working" class="headerlink" title="Directory the shell is started in. If this is unset, or None, the working"></a>Directory the shell is started in. If this is unset, or <code>None</code>, the working</h1><h1 id="directory-of-the-parent-process-will-be-used"><a href="#directory-of-the-parent-process-will-be-used" class="headerlink" title="directory of the parent process will be used."></a>directory of the parent process will be used.</h1><p>#working_directory: None</p>
-<h1 id="WinPTY-backend-Windows-only"><a href="#WinPTY-backend-Windows-only" class="headerlink" title="WinPTY backend (Windows only)"></a>WinPTY backend (Windows only)</h1><p>#</p>
-<h1 id="Alacritty-defaults-to-using-the-newer-ConPTY-backend-if-it-is-available"><a href="#Alacritty-defaults-to-using-the-newer-ConPTY-backend-if-it-is-available" class="headerlink" title="Alacritty defaults to using the newer ConPTY backend if it is available,"></a>Alacritty defaults to using the newer ConPTY backend if it is available,</h1><h1 id="since-it-resolves-a-lot-of-bugs-and-is-quite-a-bit-faster-If-it-is-not"><a href="#since-it-resolves-a-lot-of-bugs-and-is-quite-a-bit-faster-If-it-is-not" class="headerlink" title="since it resolves a lot of bugs and is quite a bit faster. If it is not"></a>since it resolves a lot of bugs and is quite a bit faster. If it is not</h1><h1 id="available-the-the-WinPTY-backend-will-be-used-instead"><a href="#available-the-the-WinPTY-backend-will-be-used-instead" class="headerlink" title="available, the the WinPTY backend will be used instead."></a>available, the the WinPTY backend will be used instead.</h1><p>#</p>
-<h1 id="Setting-this-option-to-true-makes-Alacritty-use-the-legacy-WinPTY-backend"><a href="#Setting-this-option-to-true-makes-Alacritty-use-the-legacy-WinPTY-backend" class="headerlink" title="Setting this option to true makes Alacritty use the legacy WinPTY backend,"></a>Setting this option to <code>true</code> makes Alacritty use the legacy WinPTY backend,</h1><h1 id="even-if-the-ConPTY-backend-is-available"><a href="#even-if-the-ConPTY-backend-is-available" class="headerlink" title="even if the ConPTY backend is available."></a>even if the ConPTY backend is available.</h1><p>#winpty_backend: false</p>
-<h1 id="Send-ESC-x1b-before-characters-when-alt-is-pressed"><a href="#Send-ESC-x1b-before-characters-when-alt-is-pressed" class="headerlink" title="Send ESC (\x1b) before characters when alt is pressed."></a>Send ESC (\x1b) before characters when alt is pressed.</h1><p>#alt_send_esc: true</p>
-<p>#mouse:</p>
-<h1 id="Click-settings"><a href="#Click-settings" class="headerlink" title="Click settings"></a>Click settings</h1><p>  #</p>
-<h1 id="The-double-click-and-triple-click-settings-control-the-time"><a href="#The-double-click-and-triple-click-settings-control-the-time" class="headerlink" title="The double_click and triple_click settings control the time"></a>The <code>double_click</code> and <code>triple_click</code> settings control the time</h1><h1 id="alacritty-should-wait-for-accepting-multiple-clicks-as-one-double"><a href="#alacritty-should-wait-for-accepting-multiple-clicks-as-one-double" class="headerlink" title="alacritty should wait for accepting multiple clicks as one double"></a>alacritty should wait for accepting multiple clicks as one double</h1><h1 id="or-triple-click"><a href="#or-triple-click" class="headerlink" title="or triple click."></a>or triple click.</h1><p>  #double_click: { threshold: 300 }</p>
-<p>  #triple_click: { threshold: 300 }</p>
-<h1 id="If-this-is-true-the-cursor-is-temporarily-hidden-when-typing"><a href="#If-this-is-true-the-cursor-is-temporarily-hidden-when-typing" class="headerlink" title="If this is true, the cursor is temporarily hidden when typing."></a>If this is <code>true</code>, the cursor is temporarily hidden when typing.</h1><p>  #hide_when_typing: false</p>
-<p>  #url:</p>
-<pre><code># URL launcher
-#
-# This program is executed when clicking on a text which is recognized as a URL.
-# The URL is always added to the command as the last parameter.
-#
-# When set to `None`, URL launching will be disabled completely.
-#
-# Default:
-#   - (macOS) open
-#   - (Linux/BSD) xdg-open
-#   - (Windows) explorer
-#launcher:
-#  program: xdg-open
-#  args: []
+#mouse:
+  # Click settings
+  #
+  # The `double_click` and `triple_click` settings control the time
+  # alacritty should wait for accepting multiple clicks as one double
+  # or triple click.
+  #double_click: { threshold: 300 }
+  #triple_click: { threshold: 300 }
 
-# URL modifiers
+  # If this is `true`, the cursor is temporarily hidden when typing.
+  #hide_when_typing: false
+
+  #url:
+    # URL launcher
+    #
+    # This program is executed when clicking on a text which is recognized as a URL.
+    # The URL is always added to the command as the last parameter.
+    #
+    # When set to `None`, URL launching will be disabled completely.
+    #
+    # Default:
+    #   - (macOS) open
+    #   - (Linux/BSD) xdg-open
+    #   - (Windows) explorer
+    #launcher:
+    #  program: xdg-open
+    #  args: []
+
+    # URL modifiers
+    #
+    # These are the modifiers that need to be held down for opening URLs when clicking
+    # on them. The available modifiers are documented in the key binding section.
+    #modifiers: None
+
+# Mouse bindings
 #
-# These are the modifiers that need to be held down for opening URLs when clicking
-# on them. The available modifiers are documented in the key binding section.
-#modifiers: None
-</code></pre><h1 id="Mouse-bindings"><a href="#Mouse-bindings" class="headerlink" title="Mouse bindings"></a>Mouse bindings</h1><p>#</p>
-<h1 id="Mouse-bindings-are-specified-as-a-list-of-objects-much-like-the-key"><a href="#Mouse-bindings-are-specified-as-a-list-of-objects-much-like-the-key" class="headerlink" title="Mouse bindings are specified as a list of objects, much like the key"></a>Mouse bindings are specified as a list of objects, much like the key</h1><h1 id="bindings-further-below"><a href="#bindings-further-below" class="headerlink" title="bindings further below."></a>bindings further below.</h1><p>#</p>
-<h1 id="To-trigger-mouse-bindings-when-an-application-running-within-Alacritty-captures-the-mouse-the"><a href="#To-trigger-mouse-bindings-when-an-application-running-within-Alacritty-captures-the-mouse-the" class="headerlink" title="To trigger mouse bindings when an application running within Alacritty captures the mouse, the"></a>To trigger mouse bindings when an application running within Alacritty captures the mouse, the</h1><h1 id="Shift-modifier-is-automatically-added-as-a-requirement"><a href="#Shift-modifier-is-automatically-added-as-a-requirement" class="headerlink" title="Shift modifier is automatically added as a requirement."></a><code>Shift</code> modifier is automatically added as a requirement.</h1><p>#</p>
-<h1 id="Each-mouse-binding-will-specify-a"><a href="#Each-mouse-binding-will-specify-a" class="headerlink" title="Each mouse binding will specify a:"></a>Each mouse binding will specify a:</h1><p>#</p>
-<h1 id="mouse"><a href="#mouse" class="headerlink" title="- mouse:"></a>- <code>mouse</code>:</h1><p>#</p>
-<h1 id="Middle"><a href="#Middle" class="headerlink" title="- Middle"></a>- Middle</h1><h1 id="Left"><a href="#Left" class="headerlink" title="- Left"></a>- Left</h1><h1 id="Right"><a href="#Right" class="headerlink" title="- Right"></a>- Right</h1><h1 id="Numeric-identifier-such-as-5"><a href="#Numeric-identifier-such-as-5" class="headerlink" title="- Numeric identifier such as 5"></a>- Numeric identifier such as <code>5</code></h1><p>#</p>
-<h1 id="action-see-key-bindings"><a href="#action-see-key-bindings" class="headerlink" title="- action (see key bindings)"></a>- <code>action</code> (see key bindings)</h1><p>#</p>
-<h1 id="And-optionally"><a href="#And-optionally" class="headerlink" title="And optionally:"></a>And optionally:</h1><p>#</p>
-<h1 id="mods-see-key-bindings"><a href="#mods-see-key-bindings" class="headerlink" title="- mods (see key bindings)"></a>- <code>mods</code> (see key bindings)</h1><p>#mouse_bindings:</p>
-<h1 id="mouse-Middle-action-PasteSelection"><a href="#mouse-Middle-action-PasteSelection" class="headerlink" title="- { mouse: Middle, action: PasteSelection }"></a>- { mouse: Middle, action: PasteSelection }</h1><h1 id="Key-bindings"><a href="#Key-bindings" class="headerlink" title="Key bindings"></a>Key bindings</h1><p>#</p>
-<h1 id="Key-bindings-are-specified-as-a-list-of-objects-For-example-this-is-the"><a href="#Key-bindings-are-specified-as-a-list-of-objects-For-example-this-is-the" class="headerlink" title="Key bindings are specified as a list of objects. For example, this is the"></a>Key bindings are specified as a list of objects. For example, this is the</h1><h1 id="default-paste-binding"><a href="#default-paste-binding" class="headerlink" title="default paste binding:"></a>default paste binding:</h1><p>#</p>
-<h1 id="key-V-mods-Control-Shift-action-Paste"><a href="#key-V-mods-Control-Shift-action-Paste" class="headerlink" title="- { key: V, mods: Control|Shift, action: Paste }"></a><code>- { key: V, mods: Control|Shift, action: Paste }</code></h1><p>#</p>
-<h1 id="Each-key-binding-will-specify-a"><a href="#Each-key-binding-will-specify-a" class="headerlink" title="Each key binding will specify a:"></a>Each key binding will specify a:</h1><p>#</p>
-<h1 id="key-Identifier-of-the-key-pressed"><a href="#key-Identifier-of-the-key-pressed" class="headerlink" title="- key: Identifier of the key pressed"></a>- <code>key</code>: Identifier of the key pressed</h1><p>#</p>
-<h1 id="A-Z"><a href="#A-Z" class="headerlink" title="- A-Z"></a>- A-Z</h1><h1 id="F1-F24"><a href="#F1-F24" class="headerlink" title="- F1-F24"></a>- F1-F24</h1><h1 id="Key0-Key9"><a href="#Key0-Key9" class="headerlink" title="- Key0-Key9"></a>- Key0-Key9</h1><p>#</p>
-<h1 id="A-full-list-with-available-key-codes-can-be-found-here"><a href="#A-full-list-with-available-key-codes-can-be-found-here" class="headerlink" title="A full list with available key codes can be found here:"></a>A full list with available key codes can be found here:</h1><h1 id="https-docs-rs-glutin-glutin-event-enum-VirtualKeyCode-html-variants"><a href="#https-docs-rs-glutin-glutin-event-enum-VirtualKeyCode-html-variants" class="headerlink" title="https://docs.rs/glutin/*/glutin/event/enum.VirtualKeyCode.html#variants"></a><a href="https://docs.rs/glutin/*/glutin/event/enum.VirtualKeyCode.html#variants" target="_blank" rel="noopener">https://docs.rs/glutin/*/glutin/event/enum.VirtualKeyCode.html#variants</a></h1><p>#</p>
-<h1 id="Instead-of-using-the-name-of-the-keys-the-key-field-also-supports-using"><a href="#Instead-of-using-the-name-of-the-keys-the-key-field-also-supports-using" class="headerlink" title="Instead of using the name of the keys, the key field also supports using"></a>Instead of using the name of the keys, the <code>key</code> field also supports using</h1><h1 id="the-scancode-of-the-desired-key-Scancodes-have-to-be-specified-as-a"><a href="#the-scancode-of-the-desired-key-Scancodes-have-to-be-specified-as-a" class="headerlink" title="the scancode of the desired key. Scancodes have to be specified as a"></a>the scancode of the desired key. Scancodes have to be specified as a</h1><h1 id="decimal-number-This-command-will-allow-you-to-display-the-hex-scancodes"><a href="#decimal-number-This-command-will-allow-you-to-display-the-hex-scancodes" class="headerlink" title="decimal number. This command will allow you to display the hex scancodes"></a>decimal number. This command will allow you to display the hex scancodes</h1><h1 id="for-certain-keys"><a href="#for-certain-keys" class="headerlink" title="for certain keys:"></a>for certain keys:</h1><p>#</p>
-<h1 id="showkey-scancodes"><a href="#showkey-scancodes" class="headerlink" title="showkey --scancodes."></a><code>showkey --scancodes</code>.</h1><p>#</p>
-<h1 id="Then-exactly-one-of"><a href="#Then-exactly-one-of" class="headerlink" title="Then exactly one of:"></a>Then exactly one of:</h1><p>#</p>
-<h1 id="chars-Send-a-byte-sequence-to-the-running-application"><a href="#chars-Send-a-byte-sequence-to-the-running-application" class="headerlink" title="- chars: Send a byte sequence to the running application"></a>- <code>chars</code>: Send a byte sequence to the running application</h1><p>#</p>
-<h1 id="The-chars-field-writes-the-specified-string-to-the-terminal-This-makes"><a href="#The-chars-field-writes-the-specified-string-to-the-terminal-This-makes" class="headerlink" title="The chars field writes the specified string to the terminal. This makes"></a>The <code>chars</code> field writes the specified string to the terminal. This makes</h1><h1 id="it-possible-to-pass-escape-sequences-To-find-escape-codes-for-bindings"><a href="#it-possible-to-pass-escape-sequences-To-find-escape-codes-for-bindings" class="headerlink" title="it possible to pass escape sequences. To find escape codes for bindings"></a>it possible to pass escape sequences. To find escape codes for bindings</h1><h1 id="like-PageUp-quot-x1b-5-quot-you-can-run-the-command-showkey-a-outside"><a href="#like-PageUp-quot-x1b-5-quot-you-can-run-the-command-showkey-a-outside" class="headerlink" title="like PageUp (&quot;\x1b[5~&quot;), you can run the command showkey -a outside"></a>like <code>PageUp</code> (<code>&quot;\x1b[5~&quot;</code>), you can run the command <code>showkey -a</code> outside</h1><h1 id="of-tmux-Note-that-applications-use-terminfo-to-map-escape-sequences-back"><a href="#of-tmux-Note-that-applications-use-terminfo-to-map-escape-sequences-back" class="headerlink" title="of tmux. Note that applications use terminfo to map escape sequences back"></a>of tmux. Note that applications use terminfo to map escape sequences back</h1><h1 id="to-keys-It-is-therefore-required-to-update-the-terminfo-when-changing-an"><a href="#to-keys-It-is-therefore-required-to-update-the-terminfo-when-changing-an" class="headerlink" title="to keys. It is therefore required to update the terminfo when changing an"></a>to keys. It is therefore required to update the terminfo when changing an</h1><h1 id="escape-sequence"><a href="#escape-sequence" class="headerlink" title="escape sequence."></a>escape sequence.</h1><p>#</p>
-<h1 id="action-Execute-a-predefined-action"><a href="#action-Execute-a-predefined-action" class="headerlink" title="- action: Execute a predefined action"></a>- <code>action</code>: Execute a predefined action</h1><p>#</p>
-<h1 id="Copy"><a href="#Copy" class="headerlink" title="- Copy"></a>- Copy</h1><h1 id="Paste"><a href="#Paste" class="headerlink" title="- Paste"></a>- Paste</h1><h1 id="PasteSelection"><a href="#PasteSelection" class="headerlink" title="- PasteSelection"></a>- PasteSelection</h1><h1 id="IncreaseFontSize"><a href="#IncreaseFontSize" class="headerlink" title="- IncreaseFontSize"></a>- IncreaseFontSize</h1><h1 id="DecreaseFontSize"><a href="#DecreaseFontSize" class="headerlink" title="- DecreaseFontSize"></a>- DecreaseFontSize</h1><h1 id="ResetFontSize"><a href="#ResetFontSize" class="headerlink" title="- ResetFontSize"></a>- ResetFontSize</h1><h1 id="ScrollPageUp"><a href="#ScrollPageUp" class="headerlink" title="- ScrollPageUp"></a>- ScrollPageUp</h1><h1 id="ScrollPageDown"><a href="#ScrollPageDown" class="headerlink" title="- ScrollPageDown"></a>- ScrollPageDown</h1><h1 id="ScrollLineUp"><a href="#ScrollLineUp" class="headerlink" title="- ScrollLineUp"></a>- ScrollLineUp</h1><h1 id="ScrollLineDown"><a href="#ScrollLineDown" class="headerlink" title="- ScrollLineDown"></a>- ScrollLineDown</h1><h1 id="ScrollToTop"><a href="#ScrollToTop" class="headerlink" title="- ScrollToTop"></a>- ScrollToTop</h1><h1 id="ScrollToBottom"><a href="#ScrollToBottom" class="headerlink" title="- ScrollToBottom"></a>- ScrollToBottom</h1><h1 id="ClearHistory"><a href="#ClearHistory" class="headerlink" title="- ClearHistory"></a>- ClearHistory</h1><h1 id="Hide"><a href="#Hide" class="headerlink" title="- Hide"></a>- Hide</h1><h1 id="Minimize"><a href="#Minimize" class="headerlink" title="- Minimize"></a>- Minimize</h1><h1 id="Quit"><a href="#Quit" class="headerlink" title="- Quit"></a>- Quit</h1><h1 id="ToggleFullscreen"><a href="#ToggleFullscreen" class="headerlink" title="- ToggleFullscreen"></a>- ToggleFullscreen</h1><h1 id="SpawnNewInstance"><a href="#SpawnNewInstance" class="headerlink" title="- SpawnNewInstance"></a>- SpawnNewInstance</h1><h1 id="ClearLogNotice"><a href="#ClearLogNotice" class="headerlink" title="- ClearLogNotice"></a>- ClearLogNotice</h1><h1 id="ReceiveChar"><a href="#ReceiveChar" class="headerlink" title="- ReceiveChar"></a>- ReceiveChar</h1><h1 id="None"><a href="#None" class="headerlink" title="- None"></a>- None</h1><p>#</p>
-<h1 id="macOS-only"><a href="#macOS-only" class="headerlink" title="(macOS only):"></a>(macOS only):</h1><h1 id="ToggleSimpleFullscreen-Enters-fullscreen-without-occupying-another-space"><a href="#ToggleSimpleFullscreen-Enters-fullscreen-without-occupying-another-space" class="headerlink" title="- ToggleSimpleFullscreen: Enters fullscreen without occupying another space"></a>- ToggleSimpleFullscreen: Enters fullscreen without occupying another space</h1><p>#</p>
-<h1 id="command-Fork-and-execute-a-specified-command-plus-arguments"><a href="#command-Fork-and-execute-a-specified-command-plus-arguments" class="headerlink" title="- command: Fork and execute a specified command plus arguments"></a>- <code>command</code>: Fork and execute a specified command plus arguments</h1><p>#</p>
-<h1 id="The-command-field-must-be-a-map-containing-a-program-string-and-an"><a href="#The-command-field-must-be-a-map-containing-a-program-string-and-an" class="headerlink" title="The command field must be a map containing a program string and an"></a>The <code>command</code> field must be a map containing a <code>program</code> string and an</h1><h1 id="args-array-of-command-line-parameter-strings-For-example"><a href="#args-array-of-command-line-parameter-strings-For-example" class="headerlink" title="args array of command line parameter strings. For example:"></a><code>args</code> array of command line parameter strings. For example:</h1><h1 id="program-quot-alacritty-quot-args-quot-e-quot-quot-vttest-quot"><a href="#program-quot-alacritty-quot-args-quot-e-quot-quot-vttest-quot" class="headerlink" title="{ program: &quot;alacritty&quot;, args: [&quot;-e&quot;, &quot;vttest&quot;] }"></a><code>{ program: &quot;alacritty&quot;, args: [&quot;-e&quot;, &quot;vttest&quot;] }</code></h1><p>#</p>
-<h1 id="And-optionally-1"><a href="#And-optionally-1" class="headerlink" title="And optionally:"></a>And optionally:</h1><p>#</p>
-<h1 id="mods-Key-modifiers-to-filter-binding-actions"><a href="#mods-Key-modifiers-to-filter-binding-actions" class="headerlink" title="- mods: Key modifiers to filter binding actions"></a>- <code>mods</code>: Key modifiers to filter binding actions</h1><p>#</p>
-<h1 id="Command"><a href="#Command" class="headerlink" title="- Command"></a>- Command</h1><h1 id="Control"><a href="#Control" class="headerlink" title="- Control"></a>- Control</h1><h1 id="Option"><a href="#Option" class="headerlink" title="- Option"></a>- Option</h1><h1 id="Super"><a href="#Super" class="headerlink" title="- Super"></a>- Super</h1><h1 id="Shift"><a href="#Shift" class="headerlink" title="- Shift"></a>- Shift</h1><h1 id="Alt"><a href="#Alt" class="headerlink" title="- Alt"></a>- Alt</h1><p>#</p>
-<h1 id="Multiple-mods-can-be-combined-using-like-this"><a href="#Multiple-mods-can-be-combined-using-like-this" class="headerlink" title="Multiple mods can be combined using | like this:"></a>Multiple <code>mods</code> can be combined using <code>|</code> like this:</h1><h1 id="mods-Control-Shift"><a href="#mods-Control-Shift" class="headerlink" title="mods: Control|Shift."></a><code>mods: Control|Shift</code>.</h1><h1 id="Whitespace-and-capitalization-are-relevant-and-must-match-the-example"><a href="#Whitespace-and-capitalization-are-relevant-and-must-match-the-example" class="headerlink" title="Whitespace and capitalization are relevant and must match the example."></a>Whitespace and capitalization are relevant and must match the example.</h1><p>#</p>
-<h1 id="mode-Indicate-a-binding-for-only-specific-terminal-reported-modes"><a href="#mode-Indicate-a-binding-for-only-specific-terminal-reported-modes" class="headerlink" title="- mode: Indicate a binding for only specific terminal reported modes"></a>- <code>mode</code>: Indicate a binding for only specific terminal reported modes</h1><p>#</p>
-<h1 id="This-is-mainly-used-to-send-applications-the-correct-escape-sequences"><a href="#This-is-mainly-used-to-send-applications-the-correct-escape-sequences" class="headerlink" title="This is mainly used to send applications the correct escape sequences"></a>This is mainly used to send applications the correct escape sequences</h1><h1 id="when-in-different-modes"><a href="#when-in-different-modes" class="headerlink" title="when in different modes."></a>when in different modes.</h1><p>#</p>
-<h1 id="AppCursor"><a href="#AppCursor" class="headerlink" title="- AppCursor"></a>- AppCursor</h1><h1 id="AppKeypad"><a href="#AppKeypad" class="headerlink" title="- AppKeypad"></a>- AppKeypad</h1><h1 id="Alt-1"><a href="#Alt-1" class="headerlink" title="- Alt"></a>- Alt</h1><p>#</p>
-<h1 id="A-operator-can-be-used-before-a-mode-to-apply-the-binding-whenever"><a href="#A-operator-can-be-used-before-a-mode-to-apply-the-binding-whenever" class="headerlink" title="A ~ operator can be used before a mode to apply the binding whenever"></a>A <code>~</code> operator can be used before a mode to apply the binding whenever</h1><h1 id="the-mode-is-not-active-e-g-Alt"><a href="#the-mode-is-not-active-e-g-Alt" class="headerlink" title="the mode is not active, e.g. ~Alt."></a>the mode is <em>not</em> active, e.g. <code>~Alt</code>.</h1><p>#</p>
-<h1 id="Bindings-are-always-filled-by-default-but-will-be-replaced-when-a-new"><a href="#Bindings-are-always-filled-by-default-but-will-be-replaced-when-a-new" class="headerlink" title="Bindings are always filled by default, but will be replaced when a new"></a>Bindings are always filled by default, but will be replaced when a new</h1><h1 id="binding-with-the-same-triggers-is-defined-To-unset-a-default-binding-it-can"><a href="#binding-with-the-same-triggers-is-defined-To-unset-a-default-binding-it-can" class="headerlink" title="binding with the same triggers is defined. To unset a default binding, it can"></a>binding with the same triggers is defined. To unset a default binding, it can</h1><h1 id="be-mapped-to-the-ReceiveChar-action-Alternatively-you-can-use-None-for"><a href="#be-mapped-to-the-ReceiveChar-action-Alternatively-you-can-use-None-for" class="headerlink" title="be mapped to the ReceiveChar action. Alternatively, you can use None for"></a>be mapped to the <code>ReceiveChar</code> action. Alternatively, you can use <code>None</code> for</h1><h1 id="a-no-op-if-you-do-not-wish-to-receive-input-characters-for-that-binding"><a href="#a-no-op-if-you-do-not-wish-to-receive-input-characters-for-that-binding" class="headerlink" title="a no-op if you do not wish to receive input characters for that binding."></a>a no-op if you do not wish to receive input characters for that binding.</h1><p>#</p>
-<h1 id="If-the-same-trigger-is-assigned-to-multiple-actions-all-of-them-are-executed"><a href="#If-the-same-trigger-is-assigned-to-multiple-actions-all-of-them-are-executed" class="headerlink" title="If the same trigger is assigned to multiple actions, all of them are executed"></a>If the same trigger is assigned to multiple actions, all of them are executed</h1><h1 id="at-once"><a href="#at-once" class="headerlink" title="at once."></a>at once.</h1><p>#key_bindings:</p>
-<h1 id="Windows-Linux-and-BSD-only"><a href="#Windows-Linux-and-BSD-only" class="headerlink" title="(Windows, Linux, and BSD only)"></a>(Windows, Linux, and BSD only)</h1><p>  #- { key: V,        mods: Control|Shift, action: Paste            }</p>
-<p>  #- { key: C,        mods: Control|Shift, action: Copy             }</p>
-<p>  #- { key: Insert,   mods: Shift,         action: PasteSelection   }</p>
-<p>  #- { key: Key0,     mods: Control,       action: ResetFontSize    }</p>
-<p>  #- { key: Equals,   mods: Control,       action: IncreaseFontSize }</p>
-<p>  #- { key: Add,      mods: Control,       action: IncreaseFontSize }</p>
-<p>  #- { key: Subtract, mods: Control,       action: DecreaseFontSize }</p>
-<p>  #- { key: Minus,    mods: Control,       action: DecreaseFontSize }</p>
-<h1 id="Windows-only"><a href="#Windows-only" class="headerlink" title="(Windows only)"></a>(Windows only)</h1><p>  #- { key: Return,   mods: Alt,           action: ToggleFullscreen }</p>
-<h1 id="macOS-only-1"><a href="#macOS-only-1" class="headerlink" title="(macOS only)"></a>(macOS only)</h1><p>  #- { key: Key0,   mods: Command,         action: ResetFontSize    }</p>
-<p>  #- { key: Equals, mods: Command,         action: IncreaseFontSize }</p>
-<p>  #- { key: Add,    mods: Command,         action: IncreaseFontSize }</p>
-<p>  #- { key: Minus,  mods: Command,         action: DecreaseFontSize }</p>
-<p>  #- { key: K,      mods: Command,         action: ClearHistory     }</p>
-<p>  #- { key: K,      mods: Command,         chars: “\x0c”            }</p>
-<p>  #- { key: V,      mods: Command,         action: Paste            }</p>
-<p>  #- { key: C,      mods: Command,         action: Copy             }</p>
-<p>  #- { key: H,      mods: Command,         action: Hide             }</p>
-<p>  #- { key: M,      mods: Command,         action: Minimize         }</p>
-<p>  #- { key: Q,      mods: Command,         action: Quit             }</p>
-<p>  #- { key: W,      mods: Command,         action: Quit             }</p>
-<p>  #- { key: F,      mods: Command|Control, action: ToggleFullscreen }</p>
-<p>  #- { key: Paste,                    action: Paste                            }</p>
-<p>  #- { key: Copy,                     action: Copy                             }</p>
-<p>  #- { key: L,         mods: Control, action: ClearLogNotice                   }</p>
-<p>  #- { key: L,         mods: Control, chars: “\x0c”                            }</p>
-<p>  #- { key: PageUp,    mods: Shift,   action: ScrollPageUp,   mode: ~Alt       }</p>
-<p>  #- { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }</p>
-<p>  #- { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }</p>
-<p>  #- { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }</p>
-<p>#debug:</p>
-<h1 id="Display-the-time-it-takes-to-redraw-each-frame"><a href="#Display-the-time-it-takes-to-redraw-each-frame" class="headerlink" title="Display the time it takes to redraw each frame."></a>Display the time it takes to redraw each frame.</h1><p>  #render_timer: false</p>
-<h1 id="Keep-the-log-file-after-quitting-Alacritty"><a href="#Keep-the-log-file-after-quitting-Alacritty" class="headerlink" title="Keep the log file after quitting Alacritty."></a>Keep the log file after quitting Alacritty.</h1><p>  #persistent_logging: false</p>
-<h1 id="Log-level"><a href="#Log-level" class="headerlink" title="Log level"></a>Log level</h1><p>  #</p>
-<h1 id="Values-for-log-level"><a href="#Values-for-log-level" class="headerlink" title="Values for log_level:"></a>Values for <code>log_level</code>:</h1><h1 id="None-1"><a href="#None-1" class="headerlink" title="- None"></a>- None</h1><h1 id="Error"><a href="#Error" class="headerlink" title="- Error"></a>- Error</h1><h1 id="Warn"><a href="#Warn" class="headerlink" title="- Warn"></a>- Warn</h1><h1 id="Info"><a href="#Info" class="headerlink" title="- Info"></a>- Info</h1><h1 id="Debug"><a href="#Debug" class="headerlink" title="- Debug"></a>- Debug</h1><h1 id="Trace"><a href="#Trace" class="headerlink" title="- Trace"></a>- Trace</h1><p>  #log_level: Warn</p>
-<h1 id="Print-all-received-window-events"><a href="#Print-all-received-window-events" class="headerlink" title="Print all received window events."></a>Print all received window events.</h1><p>  #print_events: false</p>
-<pre><code>
-variety动态壁纸
-&gt;sudo pacman -S nitrogen  
-&gt;nitrogen /usr/share/backgrounds #nitrogen设置壁纸
-&gt;variety自定义设置
+# Mouse bindings are specified as a list of objects, much like the key
+# bindings further below.
+#
+# To trigger mouse bindings when an application running within Alacritty captures the mouse, the
+# `Shift` modifier is automatically added as a requirement.
+#
+# Each mouse binding will specify a:
+#
+# - `mouse`:
+#
+#   - Middle
+#   - Left
+#   - Right
+#   - Numeric identifier such as `5`
+#
+# - `action` (see key bindings)
+#
+# And optionally:
+#
+# - `mods` (see key bindings)
+#mouse_bindings:
+#  - { mouse: Middle, action: PasteSelection }
 
+# Key bindings
+#
+# Key bindings are specified as a list of objects. For example, this is the
+# default paste binding:
+#
+# `- { key: V, mods: Control|Shift, action: Paste }`
+#
+# Each key binding will specify a:
+#
+# - `key`: Identifier of the key pressed
+#
+#    - A-Z
+#    - F1-F24
+#    - Key0-Key9
+#
+#    A full list with available key codes can be found here:
+#    https://docs.rs/glutin/*/glutin/event/enum.VirtualKeyCode.html#variants
+#
+#    Instead of using the name of the keys, the `key` field also supports using
+#    the scancode of the desired key. Scancodes have to be specified as a
+#    decimal number. This command will allow you to display the hex scancodes
+#    for certain keys:
+#
+#       `showkey --scancodes`.
+#
+# Then exactly one of:
+#
+# - `chars`: Send a byte sequence to the running application
+#
+#    The `chars` field writes the specified string to the terminal. This makes
+#    it possible to pass escape sequences. To find escape codes for bindings
+#    like `PageUp` (`&quot;\x1b[5~&quot;`), you can run the command `showkey -a` outside
+#    of tmux. Note that applications use terminfo to map escape sequences back
+#    to keys. It is therefore required to update the terminfo when changing an
+#    escape sequence.
+#
+# - `action`: Execute a predefined action
+#
+#   - Copy
+#   - Paste
+#   - PasteSelection
+#   - IncreaseFontSize
+#   - DecreaseFontSize
+#   - ResetFontSize
+#   - ScrollPageUp
+#   - ScrollPageDown
+#   - ScrollLineUp
+#   - ScrollLineDown
+#   - ScrollToTop
+#   - ScrollToBottom
+#   - ClearHistory
+#   - Hide
+#   - Minimize
+#   - Quit
+#   - ToggleFullscreen
+#   - SpawnNewInstance
+#   - ClearLogNotice
+#   - ReceiveChar
+#   - None
+#
+#   (macOS only):
+#   - ToggleSimpleFullscreen: Enters fullscreen without occupying another space
+#
+# - `command`: Fork and execute a specified command plus arguments
+#
+#    The `command` field must be a map containing a `program` string and an
+#    `args` array of command line parameter strings. For example:
+#       `{ program: &quot;alacritty&quot;, args: [&quot;-e&quot;, &quot;vttest&quot;] }`
+#
+# And optionally:
+#
+# - `mods`: Key modifiers to filter binding actions
+#
+#    - Command
+#    - Control
+#    - Option
+#    - Super
+#    - Shift
+#    - Alt
+#
+#    Multiple `mods` can be combined using `|` like this:
+#       `mods: Control|Shift`.
+#    Whitespace and capitalization are relevant and must match the example.
+#
+# - `mode`: Indicate a binding for only specific terminal reported modes
+#
+#    This is mainly used to send applications the correct escape sequences
+#    when in different modes.
+#
+#    - AppCursor
+#    - AppKeypad
+#    - Alt
+#
+#    A `~` operator can be used before a mode to apply the binding whenever
+#    the mode is *not* active, e.g. `~Alt`.
+#
+# Bindings are always filled by default, but will be replaced when a new
+# binding with the same triggers is defined. To unset a default binding, it can
+# be mapped to the `ReceiveChar` action. Alternatively, you can use `None` for
+# a no-op if you do not wish to receive input characters for that binding.
+#
+# If the same trigger is assigned to multiple actions, all of them are executed
+# at once.
+#key_bindings:
+  # (Windows, Linux, and BSD only)
+  #- { key: V,        mods: Control|Shift, action: Paste            }
+  #- { key: C,        mods: Control|Shift, action: Copy             }
+  #- { key: Insert,   mods: Shift,         action: PasteSelection   }
+  #- { key: Key0,     mods: Control,       action: ResetFontSize    }
+  #- { key: Equals,   mods: Control,       action: IncreaseFontSize }
+  #- { key: Add,      mods: Control,       action: IncreaseFontSize }
+  #- { key: Subtract, mods: Control,       action: DecreaseFontSize }
+  #- { key: Minus,    mods: Control,       action: DecreaseFontSize }
 
-compton毛玻璃特效
-</code></pre><p>yay -S compton-tryone-git</p>
-<p>配置文件：</p>
-<h1 id="Shadow"><a href="#Shadow" class="headerlink" title="Shadow"></a>Shadow</h1><p>shadow = true;<br>no-dnd-shadow = true;<br>no-dock-shadow = true;<br>clear-shadow = true;<br>shadow-radius = 10;<br>shadow-offset-x = -15;<br>shadow-offset-y = -15;<br>shadow-opacity = 0.8;</p>
-<h1 id="shadow-red-0-0"><a href="#shadow-red-0-0" class="headerlink" title="shadow-red = 0.0;"></a>shadow-red = 0.0;</h1><h1 id="shadow-green-0-0"><a href="#shadow-green-0-0" class="headerlink" title="shadow-green = 0.0;"></a>shadow-green = 0.0;</h1><h1 id="shadow-blue-0-0"><a href="#shadow-blue-0-0" class="headerlink" title="shadow-blue = 0.0;"></a>shadow-blue = 0.0;</h1><p>shadow-exclude = [<br>    “name = ‘Notification’”,<br>    “class_g = ‘Conky’”,<br>    “class_g ?= ‘Notify-osd’”,<br>    “class_g = ‘Cairo-clock’”,<br>    “_GTK_FRAME_EXTENTS@:c”<br>];</p>
-<h1 id="shadow-exclude-“n-e-Notification”"><a href="#shadow-exclude-“n-e-Notification”" class="headerlink" title="shadow-exclude = “n:e:Notification”;"></a>shadow-exclude = “n:e:Notification”;</h1><h1 id="shadow-exclude-reg-“x10-0-0”"><a href="#shadow-exclude-reg-“x10-0-0”" class="headerlink" title="shadow-exclude-reg = “x10+0+0”;"></a>shadow-exclude-reg = “x10+0+0”;</h1><h1 id="xinerama-shadow-crop-true"><a href="#xinerama-shadow-crop-true" class="headerlink" title="xinerama-shadow-crop = true;"></a>xinerama-shadow-crop = true;</h1><h1 id="Opacity"><a href="#Opacity" class="headerlink" title="Opacity"></a>Opacity</h1><p>menu-opacity = 0.8;<br>inactive-opacity = 0.88;<br>active-opacity = 1;<br>frame-opacity = 0.7;<br>inactive-opacity-override = false;<br>alpha-step = 0.06;</p>
-<h1 id="inactive-dim-0-2"><a href="#inactive-dim-0-2" class="headerlink" title="inactive-dim = 0.2;"></a>inactive-dim = 0.2;</h1><h1 id="inactive-dim-fixed-true"><a href="#inactive-dim-fixed-true" class="headerlink" title="inactive-dim-fixed = true;"></a>inactive-dim-fixed = true;</h1><p>blur-background = true;</p>
-<h1 id="blur-background-frame-true"><a href="#blur-background-frame-true" class="headerlink" title="blur-background-frame = true;"></a>blur-background-frame = true;</h1><p>blur-method = “kawase”;<br>blur-strength = 8;<br>blur-kern = “3x3box”;</p>
-<h1 id="blur-kern-“5-5-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1”"><a href="#blur-kern-“5-5-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1”" class="headerlink" title="blur-kern = “5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1”;"></a>blur-kern = “5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1”;</h1><h1 id="blur-background-fixed-true"><a href="#blur-background-fixed-true" class="headerlink" title="blur-background-fixed = true;"></a>blur-background-fixed = true;</h1><p>blur-background-exclude = [<br>    “window_type = ‘dock’”,<br>    “window_type = ‘desktop’”,<br>    “_GTK_FRAME_EXTENTS@:c”<br>];</p>
-<h1 id="opacity-rule-“80-class-g-‘URxvt’”"><a href="#opacity-rule-“80-class-g-‘URxvt’”" class="headerlink" title="opacity-rule = [ “80:class_g = ‘URxvt’” ];"></a>opacity-rule = [ “80:class_g = ‘URxvt’” ];</h1><h1 id="Fading"><a href="#Fading" class="headerlink" title="Fading"></a>Fading</h1><p>fading = true;<br>fade-delta = 2;<br>fade-in-step = 0.05;<br>fade-out-step = 0.05;</p>
-<h1 id="no-fading-openclose-true"><a href="#no-fading-openclose-true" class="headerlink" title="no-fading-openclose = true;"></a>no-fading-openclose = true;</h1><h1 id="no-fading-destroyed-argb-true"><a href="#no-fading-destroyed-argb-true" class="headerlink" title="no-fading-destroyed-argb = true;"></a>no-fading-destroyed-argb = true;</h1><p>fade-exclude = [ ];</p>
-<h1 id="Other"><a href="#Other" class="headerlink" title="Other"></a>Other</h1><p>backend = “glx”;<br>mark-wmwin-focused = true;<br>mark-ovredir-focused = true;</p>
-<h1 id="use-ewmh-active-win-true"><a href="#use-ewmh-active-win-true" class="headerlink" title="use-ewmh-active-win = true;"></a>use-ewmh-active-win = true;</h1><p>detect-rounded-corners = true;<br>detect-client-opacity = true;<br>refresh-rate = 0;<br>vsync = “none”;<br>dbe = false;<br>paint-on-overlay = true;</p>
-<h1 id="sw-opti-true"><a href="#sw-opti-true" class="headerlink" title="sw-opti = true;"></a>sw-opti = true;</h1><h1 id="unredir-if-possible-true"><a href="#unredir-if-possible-true" class="headerlink" title="unredir-if-possible = true;"></a>unredir-if-possible = true;</h1><h1 id="unredir-if-possible-delay-5000"><a href="#unredir-if-possible-delay-5000" class="headerlink" title="unredir-if-possible-delay = 5000;"></a>unredir-if-possible-delay = 5000;</h1><h1 id="unredir-if-possible-exclude"><a href="#unredir-if-possible-exclude" class="headerlink" title="unredir-if-possible-exclude = [ ];"></a>unredir-if-possible-exclude = [ ];</h1><p>focus-exclude = [ “class_g = ‘Cairo-clock’” ];<br>detect-transient = true;<br>detect-client-leader = true;<br>invert-color-include = [ ];</p>
-<h1 id="resize-damage-1"><a href="#resize-damage-1" class="headerlink" title="resize-damage = 1;"></a>resize-damage = 1;</h1><h1 id="GLX-backend"><a href="#GLX-backend" class="headerlink" title="GLX backend"></a>GLX backend</h1><h1 id="glx-no-stencil-true"><a href="#glx-no-stencil-true" class="headerlink" title="glx-no-stencil = true;"></a>glx-no-stencil = true;</h1><p>glx-copy-from-front = false;</p>
-<h1 id="glx-use-copysubbuffermesa-true"><a href="#glx-use-copysubbuffermesa-true" class="headerlink" title="glx-use-copysubbuffermesa = true;"></a>glx-use-copysubbuffermesa = true;</h1><h1 id="glx-no-rebind-pixmap-true"><a href="#glx-no-rebind-pixmap-true" class="headerlink" title="glx-no-rebind-pixmap = true;"></a>glx-no-rebind-pixmap = true;</h1><p>glx-swap-method = “undefined”;</p>
-<h1 id="glx-use-gpushader4-true"><a href="#glx-use-gpushader4-true" class="headerlink" title="glx-use-gpushader4 = true;"></a>glx-use-gpushader4 = true;</h1><h1 id="xrender-sync-true"><a href="#xrender-sync-true" class="headerlink" title="xrender-sync = true;"></a>xrender-sync = true;</h1><h1 id="xrender-sync-fence-true"><a href="#xrender-sync-fence-true" class="headerlink" title="xrender-sync-fence = true;"></a>xrender-sync-fence = true;</h1><h1 id="Window-type-settings"><a href="#Window-type-settings" class="headerlink" title="Window type settings"></a>Window type settings</h1><p>wintypes:<br>{<br>  tooltip = { fade = true; shadow = true; opacity = 0.75; focus = true; };<br>};</p>
-<pre><code>安装fish
-</code></pre><p>sudo pacman -S fish</p>
-<p>自行github oh-my-fish<br><code>`</code></p>
-<h3 id="修改i3配置文件"><a href="#修改i3配置文件" class="headerlink" title="修改i3配置文件"></a>修改i3配置文件</h3><p>i3的配置文件在<code>~/.config/i3/config</code>,前面安装compton等需要设置开机自启在任意位置插入</p>
+  # (Windows only)
+  #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
+
+  # (macOS only)
+  #- { key: Key0,   mods: Command,         action: ResetFontSize    }
+  #- { key: Equals, mods: Command,         action: IncreaseFontSize }
+  #- { key: Add,    mods: Command,         action: IncreaseFontSize }
+  #- { key: Minus,  mods: Command,         action: DecreaseFontSize }
+  #- { key: K,      mods: Command,         action: ClearHistory     }
+  #- { key: K,      mods: Command,         chars: &quot;\x0c&quot;            }
+  #- { key: V,      mods: Command,         action: Paste            }
+  #- { key: C,      mods: Command,         action: Copy             }
+  #- { key: H,      mods: Command,         action: Hide             }
+  #- { key: M,      mods: Command,         action: Minimize         }
+  #- { key: Q,      mods: Command,         action: Quit             }
+  #- { key: W,      mods: Command,         action: Quit             }
+  #- { key: F,      mods: Command|Control, action: ToggleFullscreen }
+
+  #- { key: Paste,                    action: Paste                            }
+  #- { key: Copy,                     action: Copy                             }
+  #- { key: L,         mods: Control, action: ClearLogNotice                   }
+  #- { key: L,         mods: Control, chars: &quot;\x0c&quot;                            }
+  #- { key: PageUp,    mods: Shift,   action: ScrollPageUp,   mode: ~Alt       }
+  #- { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }
+  #- { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
+  #- { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
+
+#debug:
+  # Display the time it takes to redraw each frame.
+  #render_timer: false
+
+  # Keep the log file after quitting Alacritty.
+  #persistent_logging: false
+
+  # Log level
+  #
+  # Values for `log_level`:
+  #   - None
+  #   - Error
+  #   - Warn
+  #   - Info
+  #   - Debug
+  #   - Trace
+  #log_level: Warn
+
+  # Print all received window events.
+  #print_events: false
+</code></pre><p>variety动态壁纸</p>
+<blockquote>
+<p>sudo pacman -S nitrogen<br>nitrogen /usr/share/backgrounds #nitrogen设置壁纸<br>variety自定义设置</p>
+</blockquote>
+<p>compton毛玻璃特效</p>
+<pre><code>yay -S compton-tryone-git
+
+配置文件：
+
+# Shadow
+shadow = true;
+no-dnd-shadow = true;
+no-dock-shadow = true;
+clear-shadow = true;
+shadow-radius = 10;
+shadow-offset-x = -15;
+shadow-offset-y = -15;
+shadow-opacity = 0.8;
+# shadow-red = 0.0;
+# shadow-green = 0.0;
+# shadow-blue = 0.0;
+shadow-exclude = [
+    &quot;name = &#39;Notification&#39;&quot;,
+    &quot;class_g = &#39;Conky&#39;&quot;,
+    &quot;class_g ?= &#39;Notify-osd&#39;&quot;,
+    &quot;class_g = &#39;Cairo-clock&#39;&quot;,
+    &quot;_GTK_FRAME_EXTENTS@:c&quot;
+];
+# shadow-exclude = &quot;n:e:Notification&quot;;
+# shadow-exclude-reg = &quot;x10+0+0&quot;;
+# xinerama-shadow-crop = true;
+
+# Opacity
+menu-opacity = 0.8;
+inactive-opacity = 0.88;
+active-opacity = 1;
+frame-opacity = 0.7;
+inactive-opacity-override = false;
+alpha-step = 0.06;
+# inactive-dim = 0.2;
+# inactive-dim-fixed = true;
+blur-background = true;
+# blur-background-frame = true;
+blur-method = &quot;kawase&quot;;
+blur-strength = 8;
+blur-kern = &quot;3x3box&quot;;
+# blur-kern = &quot;5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1&quot;;
+# blur-background-fixed = true;
+blur-background-exclude = [
+    &quot;window_type = &#39;dock&#39;&quot;,
+    &quot;window_type = &#39;desktop&#39;&quot;,
+    &quot;_GTK_FRAME_EXTENTS@:c&quot;
+];
+# opacity-rule = [ &quot;80:class_g = &#39;URxvt&#39;&quot; ];
+
+# Fading
+fading = true;
+fade-delta = 2;
+fade-in-step = 0.05;
+fade-out-step = 0.05;
+# no-fading-openclose = true;
+# no-fading-destroyed-argb = true;
+fade-exclude = [ ];
+
+# Other
+backend = &quot;glx&quot;;
+mark-wmwin-focused = true;
+mark-ovredir-focused = true;
+# use-ewmh-active-win = true;
+detect-rounded-corners = true;
+detect-client-opacity = true;
+refresh-rate = 0;
+vsync = &quot;none&quot;;
+dbe = false;
+paint-on-overlay = true;
+# sw-opti = true;
+# unredir-if-possible = true;
+# unredir-if-possible-delay = 5000;
+# unredir-if-possible-exclude = [ ];
+focus-exclude = [ &quot;class_g = &#39;Cairo-clock&#39;&quot; ];
+detect-transient = true;
+detect-client-leader = true;
+invert-color-include = [ ];
+# resize-damage = 1;
+
+# GLX backend
+# glx-no-stencil = true;
+glx-copy-from-front = false;
+# glx-use-copysubbuffermesa = true;
+# glx-no-rebind-pixmap = true;
+glx-swap-method = &quot;undefined&quot;;
+# glx-use-gpushader4 = true;
+# xrender-sync = true;
+# xrender-sync-fence = true;
+
+# Window type settings
+wintypes:
+{
+  tooltip = { fade = true; shadow = true; opacity = 0.75; focus = true; };
+};
+</code></pre><p>安装fish</p>
+<pre><code>sudo pacman -S fish
+
+自行github oh-my-fish
+</code></pre><h3 id="修改i3配置文件"><a href="#修改i3配置文件" class="headerlink" title="修改i3配置文件"></a>修改i3配置文件</h3><p>i3的配置文件在<code>~/.config/i3/config</code>,前面安装compton等需要设置开机自启在任意位置插入</p>
 <blockquote>
 <p>exec –no-startup-id variety<br>exec –no-startup-id compton<br>exec –no-startup-id fcitx #输入法  </p>
 </blockquote>
